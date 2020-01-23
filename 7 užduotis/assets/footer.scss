@@ -1,0 +1,28 @@
+footer{
+    .container{
+        .row{
+            .col-6{
+                h3{
+                    color: #484848;
+                    font-family: $main_text_family;
+                    font-size: 30px;
+                    font-weight: 400;
+                    line-height: 25.99px;
+                    margin-bottom: 62px;
+                }
+                p{
+                    color: #484848;
+                    font-family: $main_text_family;
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 25.99px;
+                }
+                #red_email{
+                    color: $red;
+                }
+                
+            }
+        }
+    }
+    margin-bottom: 80px;
+}

@@ -1,0 +1,74 @@
+@mixin responsive-md() {
+    @media (max-width: 991px) {
+        @content;
+    }
+}
+
+@mixin responsive-sm() {
+    @media (max-width: 768px) {
+        @content;
+    }
+}
+
+@mixin login_button {
+    width: 120px;
+    height: 40px;
+    border: 1px solid $white;
+    border-radius: 5px;
+    background: transparent;
+    font-family: $main_text_family;
+    font-size: 16px;
+    color: $white;
+    cursor: pointer;
+    @include responsive-sm(){
+        width: 70px;
+        height: 35px;
+        font-size: 14px;
+    }
+}
+
+@mixin input_field{
+    height: 55px;
+    padding-left: 33px;
+    font-size: 16px;
+    color: $gray;
+    font-family: $main_text_family;
+    border: 1px solid #e6e6e6;
+    background-color: #ffffff;
+    margin: 0px -3px;
+    @include responsive-md(){
+        background-color: rgba(255, 255, 255, 0.4);
+        padding-left: 0;
+    }
+    @include responsive-sm(){
+        height: 45px;
+        padding-left: 0px;
+        font-size: 13px;
+    }
+}
+
+@mixin h3_text{
+    font-family: $main_text_family;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 30px;
+    color: #484848;
+}
+
+@mixin text_inside_img{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: $white;
+    font-family: $main_text_family;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 26px;
+    letter-spacing: 1.6px;
+    width: max-content;
+}
+
+

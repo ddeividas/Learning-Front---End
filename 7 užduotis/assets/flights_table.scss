@@ -1,0 +1,424 @@
+section{
+    .container{
+        width: 100%;
+        .row{
+            @include responsive-sm(){
+                margin-top: 40px;
+            }
+            margin-top: 150px;
+            .flights{
+                font-family: $main_text_family;
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                font-size: 30px;
+                color: #484848;
+                h3{
+                    margin: 0;
+                }
+            }
+            .col-lg-10{
+                display: flex;
+                justify-content: flex-end;
+            }
+            .flights_navbar{
+                nav{
+                    display: flex;
+                    align-items: center;
+                    
+                    ul{
+                        list-style-type: none;
+                        display: flex;
+                        align-items: center;
+                        margin: 0;
+                        li{
+                            display: inline-block;
+                            margin: 0;
+                            a{
+                                text-decoration: none;
+                                font-size: 16px;
+                                color: #484848;
+                                font-family: $main_text_family;
+                                margin-left: 30px;
+                                font-weight: 700;
+                                &:hover{
+                                    color: $red;
+                                    font-weight: 700;
+                                }
+                            }
+                            .div_buttons{
+                                margin: 0;
+                                div{
+                                    width: 25px;
+                                    height: 4px;
+                                    margin-bottom: 4px;
+                                    background-color: #484848;
+                                    display: none;
+                                    @include responsive-md() {
+                                        display: block;
+                                    }
+                                }
+                            }
+                        }
+                        .hidden_navbar{
+                            @include responsive-md() {
+                                display: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .table_box{
+            overflow-x: scroll;
+        table{
+            width: 100%;
+            .first_table_row{
+                height: 115px;
+                border-bottom: 1px solid #e6e6e6;
+                .icon_row{
+                    width: 5%;
+                    text-align: center;
+                }
+                .text_row{
+                    width: 15%;
+                    text-align: center;
+                }
+                .price_row{
+                    width: 20%;
+                    text-align: center;
+                }
+                .text_align_start{
+                    text-align: start;
+                }
+                th{
+                    font-weight: 500;
+                }
+            }
+            .second_table_row{
+                height: 142px;
+                border-bottom: 1px solid #e6e6e6;
+                th{
+                    .icon_row{
+                        width: 5%;
+                        text-align: center;
+                    }
+                    .text_row{
+                        width: 15%;
+                        text-align: center;
+                    }
+                    .price_row{
+                        width: 20%;
+                        text-align: center;
+                    }
+                .first_word{
+                    color: #484848;
+                    font-size: 16px;
+                    font-family: $main_text_family;
+                    font-weight: 400;
+                    @include responsive-md(){
+                        font-size: 14px;
+                    }
+                }
+                .last_word{
+                    color: #9a9a9a;
+                    font-size: 16px;
+                    font-family: $main_text_family;
+                    font-weight: 400;
+                    @include responsive-md(){
+                        font-size: 14px;
+                    }
+                }
+                #price_button{
+                    @include login_button;
+                    color: $red;
+                    border-color: $red;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin: auto;
+                    }
+                }
+            }
+            .third_table_row{
+                height: 142px;
+                border-bottom: 1px solid #e6e6e6;
+                th{
+                    .icon_row{
+                        width: 5%;
+                        text-align: center;
+                    }
+                    .text_row{
+                        width: 15%;
+                        text-align: center;
+                    }
+                    .price_row{
+                        width: 20%;
+                        text-align: center;
+                    }
+                .first_word{
+                    color: #484848;
+                    font-size: 16px;
+                    font-family: $main_text_family;
+                    font-weight: 400;
+                    @include responsive-md(){
+                        font-size: 14px;
+                    }
+                }
+                .last_word{
+                    color: #9a9a9a;
+                    font-size: 16px;
+                    font-family: $main_text_family;
+                    font-weight: 400;
+                    @include responsive-md(){
+                        font-size: 14px;
+                    }
+                }
+                #price_button{
+                    @include login_button;
+                    color: $red;
+                    border-color: $red;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin: auto;
+                    }
+                }
+            }
+            .four_table_row{
+                height: 142px;
+                border-bottom: 1px solid #e6e6e6;
+                th{
+                    .icon_row{
+                        width: 5%;
+                        text-align: center;
+                    }
+                    .text_row{
+                        width: 15%;
+                        text-align: center;
+                    }
+                    .price_row{
+                        width: 20%;
+                        text-align: center;
+                    }
+                .first_word{
+                    color: #484848;
+                    font-size: 16px;
+                    font-family: $main_text_family;
+                    font-weight: 400;
+                    @include responsive-md(){
+                        font-size: 14px;
+                    }
+                }
+                .last_word{
+                    color: #9a9a9a;
+                    font-size: 16px;
+                    font-family: $main_text_family;
+                    font-weight: 400;
+                    @include responsive-md(){
+                        font-size: 14px;
+                    }
+                }
+                #price_button{
+                    @include login_button;
+                    color: $red;
+                    border-color: $red;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin: auto;
+                    }
+                }
+            }
+            .five_table_row{
+                height: 142px;
+                border-bottom: 1px solid #e6e6e6;
+                th{
+                    .icon_row{
+                        width: 5%;
+                        text-align: center;
+                    }
+                    .text_row{
+                        width: 15%;
+                        text-align: center;
+                    }
+                    .price_row{
+                        width: 20%;
+                        text-align: center;
+                    }
+                .first_word{
+                    color: #484848;
+                    font-size: 16px;
+                    font-family: $main_text_family;
+                    font-weight: 400;
+                    @include responsive-md(){
+                        font-size: 14px;
+                    }
+                }
+                .last_word{
+                    color: #9a9a9a;
+                    font-size: 16px;
+                    font-family: $main_text_family;
+                    font-weight: 400;
+                    @include responsive-md(){
+                        font-size: 14px;
+                    }
+                }
+                #price_button{
+                    @include login_button;
+                    color: $red;
+                    border-color: $red;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin: auto;
+                    }
+                }
+            }
+            .six_table_row{
+                height: 142px;
+                border-bottom: 1px solid #e6e6e6;
+                th{
+                    .icon_row{
+                        width: 5%;
+                        text-align: center;
+                    }
+                    .text_row{
+                        width: 15%;
+                        text-align: center;
+                    }
+                    .price_row{
+                        width: 20%;
+                        text-align: center;
+                    }
+                .first_word{
+                    color: #484848;
+                    font-size: 16px;
+                    font-family: $main_text_family;
+                    font-weight: 400;
+                    @include responsive-md(){
+                        font-size: 14px;
+                    }
+                }
+                .last_word{
+                    color: #9a9a9a;
+                    font-size: 16px;
+                    font-family: $main_text_family;
+                    font-weight: 400;
+                    @include responsive-md(){
+                        font-size: 14px;
+                    }
+                }
+                #price_button{
+                    @include login_button;
+                    color: $red;
+                    border-color: $red;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin: auto;
+                    }
+                }
+            }
+            .seven_table_row{
+                height: 142px;
+                @include responsive-md(){
+                    height: 100px;
+                }
+                @include responsive-sm(){
+                    height: 50px;
+                }
+                th{
+                    .icon_row{
+                        width: 5%;
+                        text-align: center;
+                    }
+                    .text_row{
+                        width: 15%;
+                        text-align: center;
+                    }
+                    .price_row{
+                        width: 20%;
+                        text-align: center;
+                    }
+                    text-align: end;
+                    .all_flights{
+                        font-size: 16px;
+                        color: #484848;
+                        font-family: $main_text_family;
+                        font-weight: 700;
+                        cursor: pointer;
+                        &:hover{
+                            color: $red;
+                        }
+                    }
+                }
+            }
+        }
+    }
+        .hotels{
+            margin-top: 30px;
+            .flights{
+                font-family: $main_text_family;
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                font-size: 30px;
+                color: #484848;
+                h3{
+                    margin: 0;
+                }
+            }
+            .col-lg-10{
+                display: flex;
+                justify-content: flex-end;
+            }
+            .flights_navbar{
+                nav{
+                    display: flex;
+                    align-items: center;
+                    
+                    ul{
+                        list-style-type: none;
+                        display: flex;
+                        align-items: center;
+                        margin: 0;
+                        li{
+                            display: inline-block;
+                            margin: 0;
+                            a{
+                                text-decoration: none;
+                                font-size: 16px;
+                                color: #484848;
+                                font-family: $main_text_family;
+                                margin-left: 30px;
+                                &:hover{
+                                    color: $red;
+                                }
+                            }
+                            .div_buttons_for_hotel{
+                                margin: 0;
+                                div{
+                                    width: 25px;
+                                    height: 4px;
+                                    margin-bottom: 4px;
+                                    background-color: #484848;
+                                    display: none;
+                                    @include responsive-md() {
+                                        display: block;
+                                    }
+                                }
+                            } 
+                        }
+                        .hidden_navbar{
+                            @include responsive-md() {
+                                display: none;
+                            }
+                        }
+                    }
+                    
+                }
+            }
+        }
+    }
+}

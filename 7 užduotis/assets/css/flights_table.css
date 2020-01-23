@@ -1,0 +1,64 @@
+section .container .row {
+  background-color: turquoise;
+}
+
+section .container .row .col-lg-2 {
+  padding-left: 0;
+}
+
+section .container .row .flights {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  font-size: 30px;
+}
+
+section .container .row .flights h3 {
+  margin: 0;
+}
+
+section .container .row .col-lg-10 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding-right: 0px;
+}
+
+section .container .row .flights_navbar nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section .container .row .flights_navbar nav ul {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0;
+}
+
+section .container .row .flights_navbar nav ul li {
+  display: inline-block;
+  margin: 0;
+}
+
+section .container .row .flights_navbar nav ul li a {
+  text-decoration: none;
+}
+/*# sourceMappingURL=flights_table.css.map */

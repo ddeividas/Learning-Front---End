@@ -1,0 +1,87 @@
+.hotel_images{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 15px;
+    justify-content: center;
+
+    .blokas{
+        margin-top: 30px;
+        img{
+            width: 100%; 
+        }
+        .image{
+            img{
+                width: 100%;
+            }
+        }
+        .text_bottom_img{
+            border: 1px solid #e6e6e6;
+            border-top: none;
+            width: 100%;
+            p{
+                color: #484848;
+                font-family: $main_text_family;
+                font-size: 16px;
+                font-weight: 600;
+                line-height: 26px;
+                padding-top: 26px;
+                margin-bottom: 26px;
+                margin-left: 16px;
+            }
+            .tekstas{
+                display: flex;
+                flex-direction: row;
+                width: 100%;    
+                color: #9a9a9a;
+                font-family: $main_text_family;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 26px;
+                .kairys_tekstas{
+                    width: calc(50% - 15px);
+                    margin-left: 15px;
+                }
+                .desinys_tekstas{
+                    width: calc(50% - 15px);
+                    margin-right: 15px;
+                    text-align: end;
+                }
+            }
+                .kainos_mygtukas{
+                    @include login_button;
+                    color: $red;
+                    border-color: $red;
+                    margin-left: 15px;
+                    margin-top: 22px;
+                    margin-bottom: 25px;
+                }
+            }
+        }
+        }
+.see_all{
+    width: 100%;
+    padding-top: 43px;
+    padding-bottom: 80px;
+    margin: 0;
+    text-align: end;
+    font-weight: 700;
+    @include responsive-md(){
+        padding-top: 30px;
+        padding-bottom: 45px;
+    }
+    @include responsive-sm(){
+        padding-top: 20px;
+        padding-bottom: 40px;
+    }
+        a{
+            text-decoration: none;
+            color: #484848;
+            font-family: $main_text_family;
+            font-size: 16px;
+            line-height: 26px;
+            &:hover{
+                color: $red;
+            }
+        }
+}

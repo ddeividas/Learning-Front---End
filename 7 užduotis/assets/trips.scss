@@ -1,0 +1,222 @@
+#trips_container{
+.container{
+    .row{
+        margin: 0;
+        .trips{
+            @include h3_text;
+            padding-left: 0;
+
+        }
+        .col-lg-10{
+            display: flex;
+            justify-content: flex-end;
+            padding-right: 0;
+        }
+         .trips_navbar{
+            padding-right: 0;
+                ul{
+                    list-style-type: none;
+                    display: flex;
+                    align-items: center;
+                    margin: 0;
+                    padding-right: 0;
+                    li{
+                        display: inline-block;
+                        margin: 0;
+                        a{
+                            text-decoration: none;
+                            font-size: 16px;
+                            color: #484848;
+                            font-family: $main_text_family;
+                            margin-left: 30px;
+                            &:hover{
+                                color: $red;
+                                font-weight: 700;
+                            }
+                        }
+                        .div_buttons{
+                            margin: 0;
+                            div{
+                                width: 25px;
+                                height: 4px;
+                                margin-bottom: 4px;
+                                background-color: #484848;
+                                display: none;
+                                @include responsive-sm() {
+                                    display: block;
+                                }
+                            }
+                        } 
+                    }
+                }
+                .hidden_navbar{
+                    @include responsive-sm() {
+                        display: none;
+                    }
+                }
+            }
+    }
+    .row{
+        .first_text{
+            margin-top: 68px;
+            border: 1px solid #e6e6e6;
+            padding: 0;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            @include responsive-md() {
+                border: none;
+            }
+            .first_text_image{
+                padding-left: 0;
+                @include responsive-md() {
+                    left: 0;
+                    right: 0;
+                    margin: auto;
+                    margin-bottom: 15px;
+                }
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            .first_text_text{
+                display: flex;
+                justify-content: center;
+                align-items: flex-start;
+                flex-direction: column;
+                @include responsive-md() {
+                    text-align: center;
+                }
+                #first_paragraph{
+                    color: #484848;
+                    font-family: $main_text_family;
+                    font-size: 16px;
+                    font-weight: 700;
+                    line-height: 26.04px;
+                    @include responsive-md() {
+                        left: 0;
+                        right: 0;
+                        margin: auto;
+                        margin-bottom: 15px;
+                    }
+                }
+                #second_paragraph{
+                    color: #484848;
+                    font-family: $main_text_family;
+                    font-size: 16px;
+                    font-weight: 500;
+                    line-height: 26.04px;
+                }
+                
+            }
+        }
+        .second_text{
+            margin-top: 30px;
+            border: 1px solid #e6e6e6;
+            padding: 0;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            @include responsive-md() {
+                border: none;
+            }
+            .second_text_image{
+                padding-left: 0;
+                @include responsive-md() {
+                    left: 0;
+                    right: 0;
+                    margin: auto;
+                    margin-bottom: 15px;
+                }
+                img{
+                    width: 100%;
+                }
+            }
+            .second_text_text{
+                display: flex;
+                justify-content: center;
+                align-items: flex-start;
+                flex-direction: column;
+                @include responsive-md() {
+                    text-align: center;
+                }
+                #first_paragraph{
+                    color: #484848;
+                    font-family: $main_text_family;
+                    font-size: 16px;
+                    font-weight: 700;
+                    line-height: 26.04px;
+                    @include responsive-md() {
+                        left: 0;
+                        right: 0;
+                        margin: auto;
+                        margin-bottom: 15px;
+                    }
+                }
+                #second_paragraph{
+                    color: #484848;
+                    font-family: $main_text_family;
+                    font-size: 16px;
+                    font-weight: 500;
+                    line-height: 26.04px;
+                }
+                
+            }
+        }
+        .third_text{
+            margin-top: 30px;
+            border: 1px solid #e6e6e6;
+            padding: 0;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            @include responsive-md() {
+                border: none;
+            }
+            .third_text_image{
+                padding-left: 0;
+                @include responsive-md() {
+                    left: 0;
+                    right: 0;
+                    margin: auto;
+                    margin-bottom: 15px;
+                }
+                img{
+                    width: 100%;
+                }
+            }
+            .third_text_text{
+                display: flex;
+                justify-content: center;
+                align-items: flex-start;
+                flex-direction: column;
+                @include responsive-md() {
+                    text-align: center;
+                }
+                #first_paragraph{
+                    color: #484848;
+                    font-family: $main_text_family;
+                    font-size: 16px;
+                    font-weight: 700;
+                    line-height: 26.04px;
+                    @include responsive-md() {
+                        left: 0;
+                        right: 0;
+                        margin: auto;
+                        margin-bottom: 15px;
+                    }
+                }
+                #second_paragraph{
+                    color: #484848;
+                    font-family: $main_text_family;
+                    font-size: 16px;
+                    font-weight: 500;
+                    line-height: 26.04px;
+                }
+                
+            }
+        }
+    }
+}
+}

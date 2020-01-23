@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,700i&display=swap&subset=latin-ext"
+        rel="stylesheet">
+    <link rel="stylesheet" href="assets/libs/boostrap/css/bootstrap.css">
+    <link rel="stylesheet" href="assets\min.css\css\style.min.css">
+    <title>PUSLAPIS</title>
+</head>
+
+<body>
+    <header>
+        <div id="header_background">
+            <div class="top_nav_bar">
+                <div class="container">
+                    <div class="row">
+                        <div class="nav_bar col-lg-10 col-md-9 col-8">
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <h1>TravelCream</h1>
+                                    </a>
+                                </li>
+                                <li class="hidden_button">
+                                    <a href="#">
+                                        <div></div>
+                                        <div></div>
+                                        <div></div>
+                                    </a>
+                                </li>
+                                <li class="hidden_navbar">
+                                    <a href="#">Flights</a>
+                                </li>
+                                <li class="hidden_navbar">
+                                    <a href="#">Hotels</a>
+                                </li>
+                                <li class="hidden_navbar">
+                                    <a href="#">Trips</a>
+                                </li>
+                                <li class="hidden_navbar">
+                                    <a href="#">Activity</a>
+                                </li>
+                                <li class="hidden_navbar">
+                                    <a href="#">Deals</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-2 col-md-3 col-4">
+                            <button id="login_button">Login</button>
+                        </div>
+                        <div id="paris_visit">
+                            <span class="first_paragraf">Do you want to visit Paris?</span>
+                            <br>
+                            <span class="second_paragraf">Why not</span>
+                        </div>
+                        <div class="input_line">
+                            <input class="left_input" type="text" placeholder="Where are you leaving from ?">
+                            <input class="left_input" type="text" placeholder="Where do you want to go ?">
+                            <input class="right_input" type="text" placeholder="Date">
+                            <input class="search_button" type="button" value="Search">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="flights col-lg-2 col-md-2 col-2">
+                    <h3>Flights</h3>
+                </div>
+                <div class="flights_navbar col-lg-10 col-md-10 col-10">
+                    <nav>
+                        <ul>
+                            <li>
+                                <a class="div_buttons" href="#">
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                </a>
+                            </li>
+                            <li class="hidden_navbar">
+                                <a href="#">Non stop</a>
+                            </li>
+                            <li class="hidden_navbar">
+                                <a href="#">Best price</a>
+                            </li>
+                            <li class="hidden_navbar">
+                                <a href="#">Airline</a>
+                            </li>
+                            <li class="hidden_navbar">
+                                <a href="#">Schedule</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="table_box">
+                <table>
+                    <tr class="first_table_row">
+                        <th colspan="2" class="price_row text_align_start">Airline</th>
+                        <th class="text_row text_align_start" ;>Date</th>
+                        <th class="text_row text_align_start" ;>Departure</th>
+                        <th class="text_row text_align_start" ;>Arrival</th>
+                        <th class="text_row text_align_start" ;>Time</th>
+                        <th class="price_row">Price</th>
+                    </tr>
+                    <tr class="second_table_row">
+                        <th class="icon_row"><img src="assets\img\vueling.png" alt=""></th>
+                        <th class="text_row text_align_start"><span class="first_word">Vueling</span><br><span
+                                class="last_word">VO1367</span></th>
+                        <th class="text_row"><span class="first_word">03/11/2017</span><br><span class="last_word">In 3
+                                days</span></th>
+                        <th class="text_row"><span class="first_word">Paris (CDG)</span><br><span
+                                class="last_word">07:15</span></th>
+                        <th class="text_row"><span class="first_word">Miami</span><br><span
+                                class="last_word">05:00</span></th>
+                        <th class="text_row"><span class="first_word">08:45</span><br><span class="last_word">CDG
+                                -MIA</span></th>
+                        <th class="price_row">
+                            <div id="price_button">870 $</div>
+                        </th>
+                    </tr>
+                    <tr class="third_table_row">
+                        <th class="icon_row"><img src="assets\img\AF.png" alt=""></th>
+                        <th class="text_row"><span class="first_word">Air France</span><br><span
+                                class="last_word">AF90</span></th>
+                        <th class="text_row"><span class="first_word">03/11/2017</span><br><span class="last_word">In 3
+                                days</span></th>
+                        <th class="text_row"><span class="first_word">Paris (CDG)</span><br><span
+                                class="last_word">03:00</span></th>
+                        <th class="text_row"><span class="first_word">Miami</span><br><span
+                                class="last_word">11:45</span></th>
+                        <th class="text_row"><span class="first_word">08:45</span><br><span class="last_word">CDG
+                                -MIA</span></th>
+                        <th class="price_row">
+                            <div id="price_button">1023 $</div>
+                        </th>
+                    </tr>
+                    <tr class="four_table_row">
+                        <th class="icon_row"><img src="assets\img\AA.png" alt=""></th>
+                        <th class="text_row"><span class="first_word">American</span><br><span
+                                class="last_word">AA63</span></th>
+                        <th class="text_row"><span class="first_word">03/11/2017</span><br><span class="last_word">In 3
+                                days</span></th>
+                        <th class="text_row"><span class="first_word">Paris (CDG)</span><br><span
+                                class="last_word">01:00</span></th>
+                        <th class="text_row"><span class="first_word">Miami</span><br><span
+                                class="last_word">10:00</span></th>
+                        <th class="text_row"><span class="first_word">09:00</span><br><span class="last_word">CDG
+                                -MIA</span></th>
+                        <th class="price_row">
+                            <div id="price_button">980 $</div>
+                        </th>
+                    </tr>
+                    <tr class="five_table_row">
+                        <th class="icon_row"><img src="assets\img\Delta.png" alt=""></th>
+                        <th class="text_row"><span class="first_word">Delta</span><br><span
+                                class="last_word">DL405</span></th>
+                        <th class="text_row"><span class="first_word">03/11/2017</span><br><span class="last_word">In 3
+                                days</span></th>
+                        <th class="text_row"><span class="first_word">Paris (CDG)</span><br><span
+                                class="last_word">02:30</span></th>
+                        <th class="text_row"><span class="first_word">Miami</span><br><span
+                                class="last_word">11:00</span></th>
+                        <th class="text_row"><span class="first_word">08:30</span><br><span class="last_word">CDG
+                                -MIA</span></th>
+                        <th class="price_row">
+                            <div id="price_button">1340 $</div>
+                        </th>
+                    </tr>
+                    <tr class="six_table_row">
+                        <th class="icon_row"><img src="assets\img\Transavia.png" alt=""></th>
+                        <th class="text_row"><span class="first_word">Transavia</span><br><span
+                                class="last_word">TV4330</span></th>
+                        <th class="text_row"><span class="first_word">03/11/2017</span><br><span class="last_word">In 3
+                                days</span></th>
+                        <th class="text_row"><span class="first_word">Paris (CDG)</span><br><span
+                                class="last_word">02:00</span></th>
+                        <th class="text_row"><span class="first_word">Miami</span><br><span
+                                class="last_word">10:00</span></th>
+                        <th class="text_row"><span class="first_word">08:00</span><br><span class="last_word">CDG
+                                -MIA</span></th>
+                        <th class="price_row">
+                            <div id="price_button">930 $</div>
+                        </th>
+                    </tr>
+                    <tr class="seven_table_row">
+                        <th colspan="7" style="width: 20%;"><span class="all_flights">See all flights</span></th>
+                    </tr>
+
+                </table>
+            </div>
+
+            <div class="row hotels">
+                <div class="flights col-lg-2 col-md-2 col-2">
+                    <h3>Hotels</h3>
+                </div>
+                <div class="flights_navbar col-lg-10 col-md-10 col-10">
+                    <nav>
+                        <ul>
+                            <li>
+                                <a class="div_buttons_for_hotel" href="#">
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                </a>
+                            </li>
+                            <li class="hidden_navbar">
+                                <a href="#">Best price</a>
+                            </li>
+                            <li class="hidden_navbar">
+                                <a href="#">Distance</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="hotel_images">
+                    <div class="blokas col-lg-4 col-md-6 col-10">
+                        <div class="image">
+                            <img src="assets\img\img1.png" alt="">
+                        </div>
+                        <div class="text_bottom_img">
+                            <p>Hôtel Paris Ouest Achères</p>
+                            <div class="tekstas">
+                                <div class="kairys_tekstas">
+                                    12,3km
+                                </div>
+                                <div class="desinys_tekstas">
+                                    Free Wi-Fi
+                                </div>
+                            </div>
+                            <button class="kainos_mygtukas">30 $</button>
+                        </div>
+
+                    </div>
+                    <div class="blokas col-lg-4 col-md-6 col-10">
+                        <img src="assets\img\img2.png" alt="">
+                        <div class="text_bottom_img">
+                            <p>L'Hôtel du Collectionneur</p>
+                            <div class="tekstas">
+                                <div class="kairys_tekstas">
+                                    9,8km
+                                </div>
+                                <div class="desinys_tekstas">
+                                    Free Wi-Fi
+                                </div>
+                            </div>
+                            <button class="kainos_mygtukas">38 $</button>
+                        </div>
+                    </div>
+                    <div class="blokas col-lg-4 col-md-6 col-10">
+                        <img src="assets\img\img3.png" alt="">
+                        <div class="text_bottom_img">
+                            <p>Hôtel Eiffel Seine</p>
+                            <div class="tekstas">
+                                <div class="kairys_tekstas">
+                                    17,6km
+                                </div>
+                                <div class="desinys_tekstas">
+                                    Free Wi-Fi
+                                </div>
+                            </div>
+                            <button class="kainos_mygtukas">42 $</button>
+                        </div>
+                    </div>
+                    <div class="blokas col-lg-4 col-md-6 col-10">
+                        <img src="assets\img\img4.png" alt="">
+                        <div class="text_bottom_img">
+                            <p>Hôtel Mademoiselle</p>
+                            <div class="tekstas">
+                                <div class="kairys_tekstas">
+                                    23,2km
+                                </div>
+                                <div class="desinys_tekstas">
+                                    Free Wi-Fi
+                                </div>
+                            </div>
+                            <button class="kainos_mygtukas">46 $</button>
+                        </div>
+                    </div>
+                    <div class="blokas col-lg-4 col-md-6 col-10">
+                        <img src="assets\img\img5.png" alt="">
+                        <div class="text_bottom_img">
+                            <p>Hôtel Novotel Paris-Les-Halles</p>
+                            <div class="tekstas">
+                                <div class="kairys_tekstas">
+                                    10,7km
+                                </div>
+                                <div class="desinys_tekstas">
+                                    Free Wi-Fi
+                                </div>
+                            </div>
+                            <button class="kainos_mygtukas">52 $</button>
+                        </div>
+                    </div>
+                    <div class="blokas col-lg-4 col-md-6 col-10">
+                        <img src="assets\img\img6.png" alt="">
+                        <div class="text_bottom_img">
+                            <p>Villa Royale Montsouris </p>
+                            <div class="tekstas">
+                                <div class="kairys_tekstas">
+                                    14,8km
+                                </div>
+                                <div class="desinys_tekstas">
+                                    Free Wi-Fi
+                                </div>
+                            </div>
+                            <button class="kainos_mygtukas">56 $</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="see_all">
+                    <a href="#">See all hotels</a>
+                </div>
+            </div>
+
+            <div class="container" id="attractions_row">
+                <div class="row">
+                    <div class="attractions col-lg-2 col-md-2 col-2">
+                        <h3>Attractions</h3>
+                    </div>
+                    <div class="attractions_navbar col-lg-10 col-md-10 col-10">
+                        <ul>
+                            <li>
+                                <a class="div_buttons" href="#">
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                </a>
+                            </li>
+                            <li class="hidden_navbar">
+                                <a href="#">All</a>
+                            </li>
+                            <li class="hidden_navbar">
+                                <a href="#">Shoppings</a>
+                            </li>
+                            <li class="hidden_navbar">
+                                <a href="#">Shows</a>
+                            </li>
+                            <li class="hidden_navbar">
+                                <a href="#">Parks</a>
+                            </li>
+                            <li class="hidden_navbar">
+                                <a href="#">Circuits</a>
+                            </li>
+                            <li class="hidden_navbar">
+                                <a href="#">Museums</a>
+                            </li>
+                            <li class="hidden_navbar">
+                                <a href="#">Monuments</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div id="attraction_images">
+                <div class="row">
+                    <div class="col-lg-4 col-6 paveiksliukas">
+                        <img src="assets\img\eiffel_tower.png" alt="">
+                        <span>Eiffel tower</span>
+                    </div>
+                    <div class="col-lg-8 col-12 paveiksliukas desinys_img">
+                        <div class="paveiksliukas_top_img">
+                            <img src="assets\img\louvres.png" alt="">
+                            <span>Louvres</span>
+                        </div>
+                        <div class="paveiksliukas_bottom_img">
+                            <img src="assets\img\notre_dame_de_paris.png"
+                                alt="">
+                            <span>Notre Dame de Paris</span>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-7 paveiksliukas bottom_img">
+                        <img src="assets\img\forun_des_halles.png"
+                            alt="">
+                        <span>Forum des Halles</span>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-7 paveiksliukas bottom_img not_last_img">
+                        <img src="assets\img\arc_de_triomphe.png"
+                            alt="">
+                        <span>Arc de Triomphe</span>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-7 paveiksliukas bottom_img last_img">
+                        <img src="assets\img\sace_soeur.png" alt="">
+                        <span>Sacré Coeur</span>
+                    </div>
+                </div>
+            </div>
+            <div class="see_all">
+                <a href="#">See all attractions</a>
+            </div>
+            <div id="trips_container">
+                <div class="container">
+                    <div class="row">
+                        <div class="trips col-lg-2 col-md-4 col-4">
+                            <h3>Trips</h3>
+                        </div>
+                        <div class="trips_navbar col-lg-10 col-md-8 col-8">
+                            <ul>
+                                <li>
+                                    <a class="div_buttons" href="#">
+                                        <div></div>
+                                        <div></div>
+                                        <div></div>
+                                    </a>
+                                </li>
+                                <li class="hidden_navbar">
+                                    <a href="#">Best Trips</a>
+                                </li>
+                                <li class="hidden_navbar">
+                                    <a href="#">Popularity</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="first_text col-lg-12">
+                            <div class="first_text_image col-lg-4 col-md-6">
+                                <img src="assets\img\first_text_img.png" alt="">
+                            </div>
+                            <div class="first_text_text col-lg-8 col-12">
+                                <p id="first_paragraph">Accès prioritaire au sommet de la tour Eiffel et hôte</p>
+                                <p id="second_paragraf">Avec ce billet coupe-file pour la tour Eiffel, profitez de la
+                                    seule entrée prioritaire à la tour
+                                    qui comprend un guide et des commentaires, vous offrant une visite sans encombre de
+                                    l'un des monuments les plus visités au monde. Accompagné de votre guide depuis
+                                    l'extérieur de l'entrée principale jusqu'au deuxième étage, vous profiterez d'une
+                                    entrée
+                                    détendue à la tour Eiffel avec suffisamment de temps libre pour flâner. </p>
+                            </div>
+                        </div>
+                        <div class="second_text col-lg-12">
+                            <div class="second_text_image col-lg-4 col-md-6">
+                                <img src="assets\img\second_text_img.png" alt="">
+                            </div>
+                            <div class="second_text_text col-lg-8 col-12">
+                                <p id="first_paragraph">Croisière sur la Seine de 3 heures avec les Bateaux-Mouches</p>
+                                <p id="second_paragraf">Découvrez Paris depuis l'eau lors d'une croisière de 3 heures
+                                    sur la Seine à bord des
+                                    emblématiques Bateaux-Mouches, avec dîner inclus. Vous pourrez admirer l’élégante
+                                    architecture de la ville toute illuminée pour la soirée tandis que vous passerez à
+                                    côté de
+                                    monuments tels que la cathédrale Notre-Dame et la Tour Eiffel. Au moment de la
+                                    réservation, choisissez le menu Prestige ou Excellence.</p>
+                            </div>
+                        </div>
+                        <div class="third_text col-lg-12">
+                            <div class="third_text_image col-lg-4 col-md-6">
+                                <img src="assets\img\third_text_img.png" alt="">
+                            </div>
+                            <div class="third_text_text col-lg-8 col-12">
+                                <p id="first_paragraph">Croisière sur la Seine de 3 heures avec les Bateaux-Mouches</p>
+                                <p id="second_paragraf">Découvrez Paris depuis l'eau lors d'une croisière de 3 heures
+                                    sur la Seine à bord des
+                                    emblématiques Bateaux-Mouches, avec dîner inclus. Vous pourrez admirer l’élégante
+                                    architecture de la ville toute illuminée pour la soirée tandis que vous passerez à
+                                    côté de
+                                    monuments tels que la cathédrale Notre-Dame et la Tour Eiffel. Au moment de la
+                                    réservation, choisissez le menu Prestige ou Excellence.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="see_all">
+                <a href="#">See all Trips</a>
+            </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="cities col-md-6 col-6">
+                    <h3>
+                        Cities
+                    </h3>
+                    <p>Paris</p>
+                    <p>Miami</p>
+                    <p>London</p>
+                    <p>Madrid</p>
+                    <p>Tokyo</p>
+                    <p>Pakin</p>
+                </div>
+                <div class="explore col-md-6 col-6">
+                    <h3>
+                        Explore
+                    </h3>
+                    <p>Register</p>
+                    <p>Login</p>
+                    <p>Assistance</p>
+                    <p>Eco</p>
+                </div>
+                <div class="About Us col-md-6 col-6">
+                    <h3>
+                        About Us
+                    </h3>
+                    <p>About TravelCream</p>
+                    <p>Careers</p>
+                    <p>Blog</p>
+                    <p>Privacy Policy</p>
+                    <p>Terms of Usage</p>
+                </div>
+                <div class="Contact col-md-6 col-6">
+                    <h3>
+                        Contact
+                    </h3>
+                    <p>Feel free to get in touch via email:</p>
+                    <!-- <p id="red_email">support@travelcream.com</p> -->
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
