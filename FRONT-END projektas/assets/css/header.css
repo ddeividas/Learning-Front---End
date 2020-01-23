@@ -1,0 +1,24 @@
+header .header_top {
+  height: 10vh;
+  background-color: lightskyblue;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+header .header_top .logo {
+  color: red;
+}
+
+header .cover {
+  background-image: url("../../img/cover.png");
+  width: 100%;
+  height: 80vh;
+  background-size: cover;
+  background-position: center;
+}
+/*# sourceMappingURL=header.css.map */

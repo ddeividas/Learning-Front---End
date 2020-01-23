@@ -1,0 +1,71 @@
+.slides{
+    @include responsive-lg(){
+        margin-top: 15px;
+    }
+}
+
+.prekes_info{
+    border: 1px solid $darkblue;
+    padding: 20px 0px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    @include responsive-sm(){
+        border-left: none;
+        border-right: none;
+    }
+    .prekes_info_paveiksliukas{
+        margin: 0px auto;
+        width: 40%;
+        @include responsive-md() {
+            width: 70%;
+        }
+        img{
+            width: 100%;
+            
+        }
+    }
+    .prekes_info_aprasymas{
+        width: 60%;
+        font-family: $main_text_family;
+        font-size: 0.8rem;
+        @include responsive-md() {
+            width: 70%;
+            font-size: 0.8rem;
+        }
+        .prekes_info_aprasymas_tekstas{
+            border-bottom: 1px solid $lightgray;
+            h3{
+                @include responsive-sm() {
+                    font-size: 20px;
+                }
+            }
+        }
+        .prekes_info_aprasymas_kaina{
+            border-bottom: 1px solid $lightgray;
+            h6{
+                margin-top: 8px;
+            }
+            p{
+                font-size: 1.5rem;
+                margin-bottom: 8px;
+                @include responsive-sm() {
+                    font-size: 1.1rem
+                }
+            }
+        }
+        .prekes_info_aprasymas_atsiimimas{
+            padding: 15px 0px;
+            button{
+                @include uzsakymo_mygtukas;
+                margin: 15px 0px;
+                padding: 15px 30px;
+                font-size: 20px;
+            }
+        }
+    }
+}
+
+.small_screen{
+    display: none;
+}

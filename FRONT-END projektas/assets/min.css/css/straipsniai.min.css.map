@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAEQ,IAFJ,CACA,UAAU,CACN,EAAE,AAAA,CACE,KAAK,CAAE,GAAG,CACb",
+    "sources": [
+        "../../straipsniai.scss"
+    ],
+    "names": [],
+    "file": "straipsniai.min.css"
+}

@@ -1,0 +1,49 @@
+footer{
+    margin-top: 25px;
+    background-color: $backgroundblue;
+    padding: 20px 0px;
+    font-family: $main_text_family;
+    .container{
+        .row{
+            justify-content: center;
+            .nuorodos{
+                @include responsive-md(){
+                    text-align: center;
+                }
+                a{
+                    text-decoration: none;
+                    color: $darkblue;
+                    &:hover{
+                        color: $hovercolor;
+                    }
+                }
+            }
+            .footer_menu{
+                @include responsive-md(){
+                    text-align: center;
+                    margin-top: 20px;
+                }
+                a{
+                    text-decoration: none;
+                    color: $darkblue;
+                    &:hover{
+                        color: $hovercolor;
+                    }
+                }
+            }
+            .partneriai{
+                @include responsive-md(){
+                    text-align: center;
+                    margin-top: 20px;
+                }
+                a{
+                    text-decoration: none;
+                    color: $darkblue;
+                    &:hover{
+                        color: $hovercolor;
+                    }
+                }
+            }
+        }
+    }
+}

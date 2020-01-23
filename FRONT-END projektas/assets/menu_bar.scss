@@ -1,0 +1,32 @@
+.left_menu_bar{
+  position: absolute;
+  top: 20vh;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: $darkblue;
+  overflow: hidden;
+  width: 0;
+  transition: .5s ease;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  ul{
+    text-align: center;
+    color: white;
+    padding: 0;
+    margin-top: 40px;
+    li{
+      list-style-type: none;
+      margin: 10px 0px;
+      a{
+        text-decoration: none;
+        color: white;
+        border-bottom: 1px solid white;
+        &:hover{
+          color: $lightblue;
+          border-color: $lightblue;
+        }
+      }
+    }
+  }
+}

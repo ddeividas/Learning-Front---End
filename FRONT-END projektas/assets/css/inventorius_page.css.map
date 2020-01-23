@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,aAAa,CAAA;EACT,OAAO,EAAE,IAAI;EACb,cAAc,EAAE,GAAG;EACnB,SAAS,EAAE,IAAI;CAOlB;;AAVD,AAII,aAJS,CAIT,MAAM,CAAA;EACF,KAAK,EAAE,GAAG;EACV,MAAM,EAAE,GAAG;EACX,MAAM,EAAE,KAAK;EACb,gBAAgB,EAAE,UAAU;CAC/B",
+    "sources": [
+        "../inventorius_page.scss"
+    ],
+    "names": [],
+    "file": "inventorius_page.css"
+}

@@ -1,0 +1,14 @@
+.inventorius .container .row .item .image {
+  width: 100%;
+}
+
+.inventorius .container .row .item .image img {
+  width: 100%;
+}
+
+.inventorius .container .row .item .tekstas {
+  width: 100%;
+  height: 50px;
+  background-color: lightsalmon;
+}
+/*# sourceMappingURL=inventorius.css.map */

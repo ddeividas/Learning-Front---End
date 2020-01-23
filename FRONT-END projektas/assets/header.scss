@@ -1,0 +1,248 @@
+header{
+    background-color: $backgroundblue;
+    font-size: 24px;
+    font-family: $main_text_family;
+    .header_top{
+        height: 10vh;
+        display: flex;
+        flex-direction: row;
+        border-bottom: 1px solid gray;
+        @include responsive-lg() {
+            font-size: 0.8em;
+        }
+        @include responsive-md() {
+            font-size: 0.6em;
+        }
+        .logo{
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            width: 30%;
+            font-size: 1.2em;
+            @include responsive-lg() {
+                width: 50%;
+                justify-content: flex-start;
+            }
+            @include responsive-md() {
+                width: 70%;
+                justify-content: flex-start;
+            }
+            a{
+                color: $darkblue;
+                text-decoration: none;
+            }
+            a{
+                width: 100%;
+                img{
+                    width: 100%;
+                }
+            }
+        }
+        .right_bar{
+            width: 70%;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            @include responsive-lg() {
+                width: 50%;
+            }
+            @include responsive-md() {
+                width: 30%;
+            }
+            ul{
+                display: flex;
+                margin: 0;
+                li{
+                    list-style-type: none;
+                    a{
+                        color: $darkblue;
+                        text-decoration: none;
+                        margin-left: 20px;
+                        border: 1px solid $darkblue;
+                        border-radius: 10px;
+                        padding: 5px;
+                        font-size: .8em;
+                        &:hover{
+                            color: $hovercolor;
+                            border-color: $hovercolor;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .header_bottom{
+        background-color: $backgroundblue;
+        height: 10vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        @include responsive-lg() {
+            font-size: 0.8em;
+        }
+        @include responsive-md() {
+            font-size: 0.6em;
+        }
+        ul{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+            padding: 0;
+            @include responsive-sm() {
+                margin-left: auto;
+            }
+            li{
+                @include responsive-sm() {
+                    display: none;
+                }
+                list-style-type: none;
+                a{
+                    color: $darkblue;
+                    text-decoration: none;
+                    margin-left: 20px;
+                    padding-bottom: 10px;
+                    &:hover{
+                        color: $hovercolor;
+                        border-bottom: 2px solid $hovercolor;
+                    }
+                }
+            }
+            #burger{
+                display: none;
+                @include responsive-sm() {
+                    display: block;
+                }
+                .menu_bar{
+                    a{
+                        margin: 0;
+                    div{
+                        width: 25px;
+                        height: 4px;
+                        margin: 5px 0px;
+                        background-color: $darkblue;
+                    }
+                }
+                }
+            }
+        }
+    }
+    .cover{
+    background-image: url('../../img/cover.png');
+    width: 100%;
+    height: 80vh;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    @include responsive-md(){
+        background-image: url('../../img/image.jpg');
+    }
+    }
+    .register{
+        font-size: 0.6em;
+        width: 310px;
+        height: 350px;
+        position: absolute;
+        right: 150px;
+        top: 100px;
+        background-color: rgba(216, 240, 255, 0.6);
+        color: $darkblue;
+        text-align: center;
+        border-radius: 10px;
+        @include responsive-md(){
+            @include absolute_center;
+        }
+        h4{
+            margin-top: 10px;
+            font-size: 30px;
+            border-bottom: 1px solid gray;
+        }
+        p{
+            a{
+                text-decoration: none;
+                &:hover{
+                    color: $hovercolor;
+                }
+            }
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+            width: 70%;
+            margin: auto;
+            ::placeholder{
+                text-align: center;
+            }
+            input{
+                margin-bottom: 10px;
+            }
+        }
+        .button{
+            button{
+                @include button;
+                background-color: $darkblue;
+                color: white;
+                transition: .5s;
+                &:hover{
+                    transform: scale(1.1);
+                }
+            }
+        }
+    }
+    .to_top{
+        @include responsive-lg{
+            display: none;
+        }
+        i{
+            color: $darkblue;
+            font-size: 44px;
+            position: fixed;
+            bottom: 40px;
+            right: 40px;
+            z-index: 99;
+        }
+    }
+}
+
+
+
+.tekstas_po_input{
+    color: red;
+    margin-bottom: 10px;
+    text-align: start;
+    font-size: 12px;
+}
+.tekstas_po_input_prisijungimo{
+    color: red;
+    margin-bottom: 10px;
+    text-align: start;
+    font-size: 14px;
+}
+
+.red_borders{
+    border: 1px solid red;
+}
+
+.modal-body form{
+    text-align: center;
+    font-family: $main_text_family;
+}
+
+.prisijungimo_mygtukas{
+    background-color: $darkblue;
+    @include responsive-md{
+        font-size: 14px;
+        padding: 10px 6px;
+    }
+    &:hover{
+        background-color: $hovercolor;
+    }
+
+
+.modal-dialog{
+    @include responsive-sm{
+        width: 80%;
+        margin: auto;
+    }
+}
+}

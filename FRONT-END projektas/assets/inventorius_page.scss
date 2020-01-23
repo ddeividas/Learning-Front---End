@@ -1,0 +1,187 @@
+
+    .prekes{
+        @include responsive-lg(){
+            margin-top: 10px;
+        }
+    }
+        .container{
+            .row{
+                //justify-content: center;
+                .right_side{
+                    h2{
+                        color: $darkblue;
+                        border-bottom: 2px solid $darkblue;
+                    }
+                    .visos_prekes{
+                        //justify-content: space-around;
+                        .slides, .snieglentes, .priedai, .vyriski_rubai, .moteriski_rubai{
+                            display: block;
+                            width: 250px;
+                            margin: 15px 3.5%;
+                            border: 1px solid rgb(190,190,190);
+                            border-radius: 2px;
+                            transition: .5s;
+                            &:hover{
+                                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+                                transform: scale(1.05);
+                                text-decoration: none;
+                            }
+                            a{
+                                text-decoration: none;
+                                color: black;
+                                font-size: 0.8rem;
+                            }
+                            .paveiksliukas{
+                                img{
+                                    width: 100%;
+                                }
+                            }
+                            .tekstas{
+                                border-top: 1px solid rgb(190,190,190);
+                                padding-top: 10px;
+                                .pavadinimas{
+                                    text-align: center;
+                                }
+                                .pirkti{
+                                    display: flex;
+                                    justify-content: space-between;
+                                    align-items: center;
+                                    padding: 0px 20px;
+                                    margin: 10px 0px;
+                                    .daugiau{
+                                        button{
+                                            background: #24a105;
+                                            color: $white;
+                                            padding: 5px 10px;
+                                            border-radius: 10px;
+                                            border: none;
+                                            transition: .5s;
+                                            &:hover{
+                                                transform: scale(1.05);
+                                                background: #3CB371;
+                                            }
+                                        }
+                                    }
+                                }
+                            }                 
+                        }
+                    }
+                }
+                .katalogas{
+                    .large_screen{
+                        @include responsive-lg() {
+                            display: none;
+                        }
+                    
+                        h5{
+                            background-color: $darkblue;
+                            padding: 16px;
+                            color: $white;
+                            margin-bottom: 0;
+                        }
+                        .kategorija{
+                            border: 1px solid $darkblue;
+                            border-top: 0;
+                            border-bottom-color: grey;
+                            padding: 20px 0px 0px 10px;
+                            font-family: $main_text_family;
+                            font-size: 0.8em;
+                            .active{
+                                color: $hovercolor;
+                            }                            
+                            h6{
+                                margin-bottom: 16px;
+                                font-weight: 600;
+                            }
+                            p{
+                                cursor: pointer;
+                                color: $darkblue;
+                                &:hover{
+                                    color: $hovercolor;
+                                }
+                            }
+                        }
+                        .kaina{
+                            border: 1px solid $darkblue;
+                            border-top: 0;
+                            padding: 20px 0px 0px 10px;
+                            font-family: $main_text_family;
+                            font-size: 0.8em;
+                            h6{
+                                margin-bottom: 16px;
+                                font-weight: 600;
+                            }
+                            input{
+                                margin-bottom: 16px;
+                            } 
+                        }   
+                    }
+                    .small_screen{
+                        display: none;
+                        @include responsive-lg(){
+                            display: block;
+                        }
+                        text-align: center;
+                        margin-bottom: 30px;
+                        cursor: pointer;
+                        .headeris{
+                            h5{
+                                background-color: $darkblue;
+                                padding: 10px 0px;
+                                color: $white;
+                                margin-bottom: 0;
+                            }
+                        }
+                        .isskleidziamas_katalogas{
+                            display: none;
+                            .kategorija{
+                                border: 1px solid $darkblue;
+                                border-top: 0;
+                                border-bottom-color: grey;
+                                padding: 20px 0px 0px 10px;
+                                font-family: $main_text_family;
+                                font-size: 0.8em;
+                                h6{
+                                    margin-bottom: 16px;
+                                    font-weight: 600;
+                                }
+                                p{
+                                    cursor: pointer;
+                                    color: $darkblue;
+                                    &:hover{
+                                        color: $hovercolor;
+                                    }
+                                }
+                            }
+                            .kaina{
+                                border: 1px solid $darkblue;
+                                border-top: 0;
+                                padding: 20px 0px 0px 10px;
+                                font-family: $main_text_family;
+                                font-size: 0.8em;
+                                h6{
+                                    margin-bottom: 16px;
+                                    font-weight: 600;
+                                }
+                                input{
+                                    margin-bottom: 16px;
+                                } 
+                            }   
+                        }
+                        .isskleisti{
+                            display: block;
+                        }
+                    }
+                }
+            }
+        }
+.overlay {
+    width: 40%;
+    @include responsive-sm-min(){
+      width: 0;
+    }
+  }
+
+.item{
+    display: none;
+}

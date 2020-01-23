@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAGY,OAHL,CACH,UAAU,CACN,IAAI,CACA,OAAO,CAAA;EACH,KAAK,EAAE,IAAI;CAOd;;AAXb,AAKgB,OALT,CACH,UAAU,CACN,IAAI,CACA,OAAO,CAEH,CAAC,CAAA;EACG,KAAK,EAAE,IAAI;CAId;;AAVjB,AAOoB,OAPb,CACH,UAAU,CACN,IAAI,CACA,OAAO,CAEH,CAAC,CAEG,GAAG,CAAA;EACC,KAAK,EAAE,IAAI;CACd",
+    "sources": [
+        "../trasos.scss"
+    ],
+    "names": [],
+    "file": "trasos.css"
+}

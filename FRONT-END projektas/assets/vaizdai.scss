@@ -1,0 +1,27 @@
+.video{
+    .container{
+        .dienos_vaizdai{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            @include responsive-max-lg(){
+                justify-content: center;
+            }
+            img{
+                width: 350px;
+                transition: .5s;
+                margin-top: 15px;
+                &:hover{
+                    transform: scale(1.1);
+                    cursor: pointer;
+                }
+                @include responsive-sm(){
+                    width: 300px;
+                }
+                @include responsive-max-lg(){
+                    margin: 15px 10px 0px 10px;
+                }
+            }
+        }
+    }
+}

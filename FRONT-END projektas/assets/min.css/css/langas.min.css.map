@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,OAAO,AAAA,CACH,QAAQ,CAAE,QAAQ,CAClB,OAAO,CAAE,EAAE,CACX,gBAAgB,CAAE,GAAG,CACxB",
+    "sources": [
+        "../../langas.scss"
+    ],
+    "names": [],
+    "file": "langas.min.css"
+}

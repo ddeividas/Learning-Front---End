@@ -1,0 +1,57 @@
+main{
+    margin-top: 50px;
+    font-family: $main_text_family;
+    .container{
+        h2{
+            color: $darkblue;
+            border-bottom: 2px solid $darkblue;
+        }
+        article{
+            margin: 20px 0px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid gray;
+            h5{
+                font-weight: 600;
+            }
+            .straipsniai{
+                display: flex;
+                flex-direction: row;
+                .image{
+                    img{
+                        width: 100%;
+                    }
+                }
+                p{
+                    span{
+                        color: $hovercolor;
+                        cursor: pointer;
+                        &:hover{
+                            color: $darkblue;
+                        }
+                    }
+                }
+            }
+        }
+        .all{
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            align-items: flex-end;
+            a{
+                color: $darkblue;
+                &:hover{
+                    color: $hovercolor;
+                }
+            }
+        }
+        }
+}
+
+.read_more{
+    padding: 0;
+    color: $darkblue;
+    text-decoration: none;
+    &:hover{
+        color: $hovercolor;
+    }
+}

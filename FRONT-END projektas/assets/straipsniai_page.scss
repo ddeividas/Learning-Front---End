@@ -1,0 +1,25 @@
+.straipsniai_pagrindinis{
+    min-height: 310px;
+    h2{
+        color: $darkblue;
+        border-bottom: 2px solid $darkblue;
+    }
+    article{
+        .antraste{
+            display: flex;
+            justify-content: space-between;
+            h5{
+                @include responsive-sm() {
+                    width: 80%;
+                }
+            }
+            span{
+                font-size: 16px;
+                @include responsive-sm() {
+                    font-size: 10px;
+                    width: 20%;
+                }
+            }
+        }
+    }
+}

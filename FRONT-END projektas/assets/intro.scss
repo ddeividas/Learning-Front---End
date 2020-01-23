@@ -1,0 +1,59 @@
+.intro{
+    position: relative;
+    @include responsive-sm(){
+        display: none;
+    }
+    .container{
+        width: 100%;
+        img{
+            width: 100%;
+        }
+        .pasiulymai{
+            z-index: 55;
+            position: absolute;
+            top: 20px;
+            left: 15%;
+            text-align: center;
+            @include responsive-lg(){
+                left: 15%;
+            }
+            @include responsive-md(){
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+            li{
+                margin-top: 30px;
+                list-style-type: none;
+                @include responsive-lg(){
+                    margin-top: 10px;
+                }
+                @include responsive-sm(){
+                    margin-top: 6px;
+                }
+                @include responsive-min-sm(){
+                    margin-top: 2px;
+                }
+                a{
+                    color: white;
+                    text-decoration: none;
+                    font-size: 1.2rem;
+                    border: 2px solid white;
+                    border-radius: 4px;
+                    padding: 5px;
+                    @include responsive-lg(){
+                        font-size: 0.8rem;
+                    }
+                    @include responsive-sm(){
+                        font-size: 0.6rem;
+                        padding: 3px;
+                    }
+                    @include responsive-min-sm(){
+                        font-size: 8px;
+                        padding: 2px 4px;
+                    }
+                }
+            }
+        }
+    }
+}

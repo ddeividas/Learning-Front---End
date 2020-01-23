@@ -1,0 +1,38 @@
+.slidinejimo_trasos{
+    .container{
+        .row{
+            .trasos{
+                a{
+                    img{
+                        height: 220px;
+                        @include responsive-md(){
+                            height: auto;
+                        }
+                    }
+                    .card-body{
+                        border: 1px solid lightgray;
+                        border-bottom-right-radius: 3px;
+                        border-bottom-left-radius: 3px;
+                        border-top: none;
+                        .card-title{
+                            border-bottom: 1px solid lightgrey;
+                        }
+                        .card-text{
+                            border-bottom: 1px solid lightgrey;
+                        }
+                        .adresas{
+                            border-bottom: 1px solid lightgrey;
+                        }
+                        .skaityti_placiau{
+                           color: rgb(196, 0, 0);
+                           margin-bottom: 5px;
+                        }
+                    }
+                    text-decoration: none;
+                    color: black;
+                }
+                margin-top: 15px;
+            }
+        }
+    }
+}

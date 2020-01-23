@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAEQ,MAFF,CACF,UAAU,CACN,aAAa,AAAA,CACT,KAAK,CAAE,IAAI,CAId,AAPT,AAIY,MAJN,CACF,UAAU,CACN,aAAa,CAET,GAAG,AAAA,CACC,KAAK,CAAE,GAAG,CACb",
+    "sources": [
+        "../../video.scss"
+    ],
+    "names": [],
+    "file": "video.min.css"
+}

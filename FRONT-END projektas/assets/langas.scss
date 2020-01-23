@@ -1,0 +1,59 @@
+.langas, .antras_langas{
+    width: 700px;
+    height: 600px;
+    @include absolute_center;
+    z-index: 99;
+    background-color: white;
+    border-radius: 10px;
+    border: 2px solid $lightblue;;
+    position: fixed;
+    text-align: center;
+    box-sizing: border-box;
+    font-size: 0.9rem;
+    display: none;
+    @include responsive-md(){
+        width: 90%;
+        height: 80%;
+        overflow: auto;
+    }
+    div{
+        width: 100%;
+        height: 30px;
+        border-bottom: 1px solid $lightblue;
+        position: sticky;
+        top: 0;
+        padding: 0;
+        font-size: 20px;
+        font-family: $main_text_family;
+        color: $lightblue;
+        display: flex;
+        justify-content: flex-end;
+        background-color: white;
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+        div{
+            width: 40px;
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            border-top-right-radius: 10px;
+            border-top-left-radius: 0px;
+        &:hover{
+            background-color: rgb(220,20,60);
+            border: none;
+            color: white;
+        }
+        }
+    }
+    h5{
+        padding-top: 10px;
+    }
+    p{
+        padding: 20px;
+        padding-top: 10px;
+    }
+}
+
+.rodyti, .antra_klase{
+    display: block;
+}

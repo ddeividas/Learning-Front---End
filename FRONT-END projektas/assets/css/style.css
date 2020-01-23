@@ -1,0 +1,1311 @@
+header {
+  background-color: #d8f0ff;
+  font-size: 24px;
+  font-family: "Montserrat", sans-serif;
+}
+
+header .header_top {
+  height: 10vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  border-bottom: 1px solid gray;
+}
+
+@media (max-width: 991px) {
+  header .header_top {
+    font-size: 0.8em;
+  }
+}
+
+@media (max-width: 768px) {
+  header .header_top {
+    font-size: 0.6em;
+  }
+}
+
+header .header_top .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  width: 30%;
+  font-size: 1.2em;
+}
+
+@media (max-width: 991px) {
+  header .header_top .logo {
+    width: 50%;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+}
+
+@media (max-width: 768px) {
+  header .header_top .logo {
+    width: 70%;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+}
+
+header .header_top .logo a {
+  color: #1860a8;
+  text-decoration: none;
+}
+
+header .header_top .logo a {
+  width: 100%;
+}
+
+header .header_top .logo a img {
+  width: 100%;
+}
+
+header .header_top .right_bar {
+  width: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 991px) {
+  header .header_top .right_bar {
+    width: 50%;
+  }
+}
+
+@media (max-width: 768px) {
+  header .header_top .right_bar {
+    width: 30%;
+  }
+}
+
+header .header_top .right_bar ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0;
+}
+
+header .header_top .right_bar ul li {
+  list-style-type: none;
+}
+
+header .header_top .right_bar ul li a {
+  color: #1860a8;
+  text-decoration: none;
+  margin-left: 20px;
+  border: 1px solid #1860a8;
+  border-radius: 10px;
+  padding: 5px;
+  font-size: .8em;
+}
+
+header .header_top .right_bar ul li a:hover {
+  color: #60d8f0;
+  border-color: #60d8f0;
+}
+
+header .header_bottom {
+  background-color: #d8f0ff;
+  height: 10vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 991px) {
+  header .header_bottom {
+    font-size: 0.8em;
+  }
+}
+
+@media (max-width: 768px) {
+  header .header_bottom {
+    font-size: 0.6em;
+  }
+}
+
+header .header_bottom ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+@media (max-width: 576px) {
+  header .header_bottom ul {
+    margin-left: auto;
+  }
+}
+
+header .header_bottom ul li {
+  list-style-type: none;
+}
+
+@media (max-width: 576px) {
+  header .header_bottom ul li {
+    display: none;
+  }
+}
+
+header .header_bottom ul li a {
+  color: #1860a8;
+  text-decoration: none;
+  margin-left: 20px;
+  padding-bottom: 10px;
+}
+
+header .header_bottom ul li a:hover {
+  color: #60d8f0;
+  border-bottom: 2px solid #60d8f0;
+}
+
+header .header_bottom ul #burger {
+  display: none;
+}
+
+@media (max-width: 576px) {
+  header .header_bottom ul #burger {
+    display: block;
+  }
+}
+
+header .header_bottom ul #burger .menu_bar a {
+  margin: 0;
+}
+
+header .header_bottom ul #burger .menu_bar a div {
+  width: 25px;
+  height: 4px;
+  margin: 5px 0px;
+  background-color: #1860a8;
+}
+
+header .cover {
+  background-image: url("../../img/cover.png");
+  width: 100%;
+  height: 80vh;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+@media (max-width: 768px) {
+  header .cover {
+    background-image: url("../../img/image.jpg");
+  }
+}
+
+header .register {
+  font-size: 0.6em;
+  width: 310px;
+  height: 350px;
+  position: absolute;
+  right: 150px;
+  top: 100px;
+  background-color: rgba(216, 240, 255, 0.6);
+  color: #1860a8;
+  text-align: center;
+  border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+  header .register {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+}
+
+header .register h4 {
+  margin-top: 10px;
+  font-size: 30px;
+  border-bottom: 1px solid gray;
+}
+
+header .register p a {
+  text-decoration: none;
+}
+
+header .register p a:hover {
+  color: #60d8f0;
+}
+
+header .register form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 70%;
+  margin: auto;
+}
+
+header .register form ::-webkit-input-placeholder {
+  text-align: center;
+}
+
+header .register form :-ms-input-placeholder {
+  text-align: center;
+}
+
+header .register form ::-ms-input-placeholder {
+  text-align: center;
+}
+
+header .register form ::placeholder {
+  text-align: center;
+}
+
+header .register form input {
+  margin-bottom: 10px;
+}
+
+header .register .button button {
+  padding: 5px;
+  border: 1px solid #1860a8;
+  border-radius: 10px;
+  background-color: #1860a8;
+  color: white;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+header .register .button button:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+@media (max-width: 991px) {
+  header .to_top {
+    display: none;
+  }
+}
+
+header .to_top i {
+  color: #1860a8;
+  font-size: 44px;
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  z-index: 99;
+}
+
+.tekstas_po_input {
+  color: red;
+  margin-bottom: 10px;
+  text-align: start;
+  font-size: 12px;
+}
+
+.tekstas_po_input_prisijungimo {
+  color: red;
+  margin-bottom: 10px;
+  text-align: start;
+  font-size: 14px;
+}
+
+.red_borders {
+  border: 1px solid red;
+}
+
+.modal-body form {
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+}
+
+.prisijungimo_mygtukas {
+  background-color: #1860a8;
+}
+
+@media (max-width: 768px) {
+  .prisijungimo_mygtukas {
+    font-size: 14px;
+    padding: 10px 6px;
+  }
+}
+
+.prisijungimo_mygtukas:hover {
+  background-color: #60d8f0;
+}
+
+@media (max-width: 576px) {
+  .prisijungimo_mygtukas .modal-dialog {
+    width: 80%;
+    margin: auto;
+  }
+}
+
+main {
+  margin-top: 50px;
+  font-family: "Montserrat", sans-serif;
+}
+
+main .container h2 {
+  color: #1860a8;
+  border-bottom: 2px solid #1860a8;
+}
+
+main .container article {
+  margin: 20px 0px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid gray;
+}
+
+main .container article h5 {
+  font-weight: 600;
+}
+
+main .container article .straipsniai {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+main .container article .straipsniai .image img {
+  width: 100%;
+}
+
+main .container article .straipsniai p span {
+  color: #60d8f0;
+  cursor: pointer;
+}
+
+main .container article .straipsniai p span:hover {
+  color: #1860a8;
+}
+
+main .container .all {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+main .container .all a {
+  color: #1860a8;
+}
+
+main .container .all a:hover {
+  color: #60d8f0;
+}
+
+.read_more {
+  padding: 0;
+  color: #1860a8;
+  text-decoration: none;
+}
+
+.read_more:hover {
+  color: #60d8f0;
+}
+
+.inventorius .container .row {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.inventorius .container .row .slides, .inventorius .container .row .snieglente1, .inventorius .container .row .snieglente2, .inventorius .container .row .priedai, .inventorius .container .row .vyriski_rubai, .inventorius .container .row .moteriski_rubai {
+  display: block;
+  width: 250px;
+  margin: 15px 10px;
+  border: 1px solid #bebebe;
+  border-radius: 2px;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.inventorius .container .row .slides:hover, .inventorius .container .row .snieglente1:hover, .inventorius .container .row .snieglente2:hover, .inventorius .container .row .priedai:hover, .inventorius .container .row .vyriski_rubai:hover, .inventorius .container .row .moteriski_rubai:hover {
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  text-decoration: none;
+}
+
+.inventorius .container .row .slides a, .inventorius .container .row .snieglente1 a, .inventorius .container .row .snieglente2 a, .inventorius .container .row .priedai a, .inventorius .container .row .vyriski_rubai a, .inventorius .container .row .moteriski_rubai a {
+  text-decoration: none;
+  color: black;
+  font-size: 0.8rem;
+}
+
+.inventorius .container .row .slides .paveiksliukas img, .inventorius .container .row .snieglente1 .paveiksliukas img, .inventorius .container .row .snieglente2 .paveiksliukas img, .inventorius .container .row .priedai .paveiksliukas img, .inventorius .container .row .vyriski_rubai .paveiksliukas img, .inventorius .container .row .moteriski_rubai .paveiksliukas img {
+  width: 100%;
+}
+
+.inventorius .container .row .slides .tekstas, .inventorius .container .row .snieglente1 .tekstas, .inventorius .container .row .snieglente2 .tekstas, .inventorius .container .row .priedai .tekstas, .inventorius .container .row .vyriski_rubai .tekstas, .inventorius .container .row .moteriski_rubai .tekstas {
+  border-top: 1px solid #bebebe;
+  padding-top: 10px;
+}
+
+.inventorius .container .row .slides .tekstas .pavadinimas, .inventorius .container .row .snieglente1 .tekstas .pavadinimas, .inventorius .container .row .snieglente2 .tekstas .pavadinimas, .inventorius .container .row .priedai .tekstas .pavadinimas, .inventorius .container .row .vyriski_rubai .tekstas .pavadinimas, .inventorius .container .row .moteriski_rubai .tekstas .pavadinimas {
+  text-align: center;
+}
+
+.inventorius .container .row .slides .tekstas .pirkti, .inventorius .container .row .snieglente1 .tekstas .pirkti, .inventorius .container .row .snieglente2 .tekstas .pirkti, .inventorius .container .row .priedai .tekstas .pirkti, .inventorius .container .row .vyriski_rubai .tekstas .pirkti, .inventorius .container .row .moteriski_rubai .tekstas .pirkti {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0px 20px;
+  margin: 10px 0px;
+}
+
+.inventorius .container .row .slides .tekstas .pirkti .daugiau button, .inventorius .container .row .snieglente1 .tekstas .pirkti .daugiau button, .inventorius .container .row .snieglente2 .tekstas .pirkti .daugiau button, .inventorius .container .row .priedai .tekstas .pirkti .daugiau button, .inventorius .container .row .vyriski_rubai .tekstas .pirkti .daugiau button, .inventorius .container .row .moteriski_rubai .tekstas .pirkti .daugiau button {
+  background: #24a105;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 10px;
+  border: none;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.inventorius .container .row .slides .tekstas .pirkti .daugiau button:hover, .inventorius .container .row .snieglente1 .tekstas .pirkti .daugiau button:hover, .inventorius .container .row .snieglente2 .tekstas .pirkti .daugiau button:hover, .inventorius .container .row .priedai .tekstas .pirkti .daugiau button:hover, .inventorius .container .row .vyriski_rubai .tekstas .pirkti .daugiau button:hover, .inventorius .container .row .moteriski_rubai .tekstas .pirkti .daugiau button:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  background: #3CB371;
+}
+
+.vietos .container .vietos_slide div img {
+  width: 100%;
+  height: 180px;
+}
+
+.vietos .container .vietos_slide div .card-body {
+  font-family: "Montserrat", sans-serif;
+}
+
+.vietos .container .vietos_slide div .card-body h5 {
+  font-weight: 600;
+  border-bottom: 1px solid #bebebe;
+}
+
+.vietos .container .vietos_slide div .card-body p {
+  font-size: 14px;
+  border-bottom: 1px solid #bebebe;
+}
+
+.vietos .container .vietos_slide div .card-body .card-text {
+  height: 120px;
+}
+
+.slick-next:before {
+  color: #1860a8;
+  font-size: 40px;
+}
+
+@media (max-width: 991px) {
+  .slick-next:before {
+    display: none;
+  }
+}
+
+.slick-prev:before {
+  color: #1860a8;
+  font-size: 40px;
+}
+
+@media (max-width: 991px) {
+  .slick-prev:before {
+    display: none;
+  }
+}
+
+.slick-prev {
+  left: -65px;
+}
+
+.card {
+  margin: auto;
+}
+
+.video .container .dienos_vaizdai {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media (max-width: 1200px) {
+  .video .container .dienos_vaizdai {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.video .container .dienos_vaizdai img {
+  width: 350px;
+  -webkit-transition: .5s;
+  transition: .5s;
+  margin-top: 15px;
+}
+
+.video .container .dienos_vaizdai img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  cursor: pointer;
+}
+
+@media (max-width: 576px) {
+  .video .container .dienos_vaizdai img {
+    width: 300px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .video .container .dienos_vaizdai img {
+    margin: 15px 10px 0px 10px;
+  }
+}
+
+footer {
+  margin-top: 25px;
+  background-color: #d8f0ff;
+  padding: 20px 0px;
+  font-family: "Montserrat", sans-serif;
+}
+
+footer .container .row {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media (max-width: 768px) {
+  footer .container .row .nuorodos {
+    text-align: center;
+  }
+}
+
+footer .container .row .nuorodos a {
+  text-decoration: none;
+  color: #1860a8;
+}
+
+footer .container .row .nuorodos a:hover {
+  color: #60d8f0;
+}
+
+@media (max-width: 768px) {
+  footer .container .row .footer_menu {
+    text-align: center;
+    margin-top: 20px;
+  }
+}
+
+footer .container .row .footer_menu a {
+  text-decoration: none;
+  color: #1860a8;
+}
+
+footer .container .row .footer_menu a:hover {
+  color: #60d8f0;
+}
+
+@media (max-width: 768px) {
+  footer .container .row .partneriai {
+    text-align: center;
+    margin-top: 20px;
+  }
+}
+
+footer .container .row .partneriai a {
+  text-decoration: none;
+  color: #1860a8;
+}
+
+footer .container .row .partneriai a:hover {
+  color: #60d8f0;
+}
+
+.langas, .antras_langas {
+  width: 700px;
+  height: 600px;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 99;
+  background-color: white;
+  border-radius: 10px;
+  border: 2px solid #3090d8;
+  position: fixed;
+  text-align: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 0.9rem;
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .langas, .antras_langas {
+    width: 90%;
+    height: 80%;
+    overflow: auto;
+  }
+}
+
+.langas div, .antras_langas div {
+  width: 100%;
+  height: 30px;
+  border-bottom: 1px solid #3090d8;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  padding: 0;
+  font-size: 20px;
+  font-family: "Montserrat", sans-serif;
+  color: #3090d8;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  background-color: white;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+
+.langas div div, .antras_langas div div {
+  width: 40px;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 0px;
+}
+
+.langas div div:hover, .antras_langas div div:hover {
+  background-color: crimson;
+  border: none;
+  color: white;
+}
+
+.langas h5, .antras_langas h5 {
+  padding-top: 10px;
+}
+
+.langas p, .antras_langas p {
+  padding: 20px;
+  padding-top: 10px;
+}
+
+.rodyti, .antra_klase {
+  display: block;
+}
+
+.left_menu_bar {
+  position: absolute;
+  top: 20vh;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #1860a8;
+  overflow: hidden;
+  width: 0;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.left_menu_bar ul {
+  text-align: center;
+  color: white;
+  padding: 0;
+  margin-top: 40px;
+}
+
+.left_menu_bar ul li {
+  list-style-type: none;
+  margin: 10px 0px;
+}
+
+.left_menu_bar ul li a {
+  text-decoration: none;
+  color: white;
+  border-bottom: 1px solid white;
+}
+
+.left_menu_bar ul li a:hover {
+  color: #3090d8;
+  border-color: #3090d8;
+}
+
+@media (max-width: 991px) {
+  .prekes {
+    margin-top: 10px;
+  }
+}
+
+.container .row .right_side h2 {
+  color: #1860a8;
+  border-bottom: 2px solid #1860a8;
+}
+
+.container .row .right_side .visos_prekes .slides, .container .row .right_side .visos_prekes .snieglentes, .container .row .right_side .visos_prekes .priedai, .container .row .right_side .visos_prekes .vyriski_rubai, .container .row .right_side .visos_prekes .moteriski_rubai {
+  display: block;
+  width: 250px;
+  margin: 15px 3.5%;
+  border: 1px solid #bebebe;
+  border-radius: 2px;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.container .row .right_side .visos_prekes .slides:hover, .container .row .right_side .visos_prekes .snieglentes:hover, .container .row .right_side .visos_prekes .priedai:hover, .container .row .right_side .visos_prekes .vyriski_rubai:hover, .container .row .right_side .visos_prekes .moteriski_rubai:hover {
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  text-decoration: none;
+}
+
+.container .row .right_side .visos_prekes .slides a, .container .row .right_side .visos_prekes .snieglentes a, .container .row .right_side .visos_prekes .priedai a, .container .row .right_side .visos_prekes .vyriski_rubai a, .container .row .right_side .visos_prekes .moteriski_rubai a {
+  text-decoration: none;
+  color: black;
+  font-size: 0.8rem;
+}
+
+.container .row .right_side .visos_prekes .slides .paveiksliukas img, .container .row .right_side .visos_prekes .snieglentes .paveiksliukas img, .container .row .right_side .visos_prekes .priedai .paveiksliukas img, .container .row .right_side .visos_prekes .vyriski_rubai .paveiksliukas img, .container .row .right_side .visos_prekes .moteriski_rubai .paveiksliukas img {
+  width: 100%;
+}
+
+.container .row .right_side .visos_prekes .slides .tekstas, .container .row .right_side .visos_prekes .snieglentes .tekstas, .container .row .right_side .visos_prekes .priedai .tekstas, .container .row .right_side .visos_prekes .vyriski_rubai .tekstas, .container .row .right_side .visos_prekes .moteriski_rubai .tekstas {
+  border-top: 1px solid #bebebe;
+  padding-top: 10px;
+}
+
+.container .row .right_side .visos_prekes .slides .tekstas .pavadinimas, .container .row .right_side .visos_prekes .snieglentes .tekstas .pavadinimas, .container .row .right_side .visos_prekes .priedai .tekstas .pavadinimas, .container .row .right_side .visos_prekes .vyriski_rubai .tekstas .pavadinimas, .container .row .right_side .visos_prekes .moteriski_rubai .tekstas .pavadinimas {
+  text-align: center;
+}
+
+.container .row .right_side .visos_prekes .slides .tekstas .pirkti, .container .row .right_side .visos_prekes .snieglentes .tekstas .pirkti, .container .row .right_side .visos_prekes .priedai .tekstas .pirkti, .container .row .right_side .visos_prekes .vyriski_rubai .tekstas .pirkti, .container .row .right_side .visos_prekes .moteriski_rubai .tekstas .pirkti {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0px 20px;
+  margin: 10px 0px;
+}
+
+.container .row .right_side .visos_prekes .slides .tekstas .pirkti .daugiau button, .container .row .right_side .visos_prekes .snieglentes .tekstas .pirkti .daugiau button, .container .row .right_side .visos_prekes .priedai .tekstas .pirkti .daugiau button, .container .row .right_side .visos_prekes .vyriski_rubai .tekstas .pirkti .daugiau button, .container .row .right_side .visos_prekes .moteriski_rubai .tekstas .pirkti .daugiau button {
+  background: #24a105;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 10px;
+  border: none;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.container .row .right_side .visos_prekes .slides .tekstas .pirkti .daugiau button:hover, .container .row .right_side .visos_prekes .snieglentes .tekstas .pirkti .daugiau button:hover, .container .row .right_side .visos_prekes .priedai .tekstas .pirkti .daugiau button:hover, .container .row .right_side .visos_prekes .vyriski_rubai .tekstas .pirkti .daugiau button:hover, .container .row .right_side .visos_prekes .moteriski_rubai .tekstas .pirkti .daugiau button:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  background: #3CB371;
+}
+
+@media (max-width: 991px) {
+  .container .row .katalogas .large_screen {
+    display: none;
+  }
+}
+
+.container .row .katalogas .large_screen h5 {
+  background-color: #1860a8;
+  padding: 16px;
+  color: white;
+  margin-bottom: 0;
+}
+
+.container .row .katalogas .large_screen .kategorija {
+  border: 1px solid #1860a8;
+  border-top: 0;
+  border-bottom-color: grey;
+  padding: 20px 0px 0px 10px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.8em;
+}
+
+.container .row .katalogas .large_screen .kategorija .active {
+  color: #60d8f0;
+}
+
+.container .row .katalogas .large_screen .kategorija h6 {
+  margin-bottom: 16px;
+  font-weight: 600;
+}
+
+.container .row .katalogas .large_screen .kategorija p {
+  cursor: pointer;
+  color: #1860a8;
+}
+
+.container .row .katalogas .large_screen .kategorija p:hover {
+  color: #60d8f0;
+}
+
+.container .row .katalogas .large_screen .kaina {
+  border: 1px solid #1860a8;
+  border-top: 0;
+  padding: 20px 0px 0px 10px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.8em;
+}
+
+.container .row .katalogas .large_screen .kaina h6 {
+  margin-bottom: 16px;
+  font-weight: 600;
+}
+
+.container .row .katalogas .large_screen .kaina input {
+  margin-bottom: 16px;
+}
+
+.container .row .katalogas .small_screen {
+  display: none;
+  text-align: center;
+  margin-bottom: 30px;
+  cursor: pointer;
+}
+
+@media (max-width: 991px) {
+  .container .row .katalogas .small_screen {
+    display: block;
+  }
+}
+
+.container .row .katalogas .small_screen .headeris h5 {
+  background-color: #1860a8;
+  padding: 10px 0px;
+  color: white;
+  margin-bottom: 0;
+}
+
+.container .row .katalogas .small_screen .isskleidziamas_katalogas {
+  display: none;
+}
+
+.container .row .katalogas .small_screen .isskleidziamas_katalogas .kategorija {
+  border: 1px solid #1860a8;
+  border-top: 0;
+  border-bottom-color: grey;
+  padding: 20px 0px 0px 10px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.8em;
+}
+
+.container .row .katalogas .small_screen .isskleidziamas_katalogas .kategorija h6 {
+  margin-bottom: 16px;
+  font-weight: 600;
+}
+
+.container .row .katalogas .small_screen .isskleidziamas_katalogas .kategorija p {
+  cursor: pointer;
+  color: #1860a8;
+}
+
+.container .row .katalogas .small_screen .isskleidziamas_katalogas .kategorija p:hover {
+  color: #60d8f0;
+}
+
+.container .row .katalogas .small_screen .isskleidziamas_katalogas .kaina {
+  border: 1px solid #1860a8;
+  border-top: 0;
+  padding: 20px 0px 0px 10px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.8em;
+}
+
+.container .row .katalogas .small_screen .isskleidziamas_katalogas .kaina h6 {
+  margin-bottom: 16px;
+  font-weight: 600;
+}
+
+.container .row .katalogas .small_screen .isskleidziamas_katalogas .kaina input {
+  margin-bottom: 16px;
+}
+
+.container .row .katalogas .small_screen .isskleisti {
+  display: block;
+}
+
+.overlay {
+  width: 40%;
+}
+
+@media (min-width: 576px) {
+  .overlay {
+    width: 0;
+  }
+}
+
+.item {
+  display: none;
+}
+
+@media (max-width: 991px) {
+  .slides {
+    margin-top: 15px;
+  }
+}
+
+.prekes_info {
+  border: 1px solid #1860a8;
+  padding: 20px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+@media (max-width: 576px) {
+  .prekes_info {
+    border-left: none;
+    border-right: none;
+  }
+}
+
+.prekes_info .prekes_info_paveiksliukas {
+  margin: 0px auto;
+  width: 40%;
+}
+
+@media (max-width: 768px) {
+  .prekes_info .prekes_info_paveiksliukas {
+    width: 70%;
+  }
+}
+
+.prekes_info .prekes_info_paveiksliukas img {
+  width: 100%;
+}
+
+.prekes_info .prekes_info_aprasymas {
+  width: 60%;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.8rem;
+}
+
+@media (max-width: 768px) {
+  .prekes_info .prekes_info_aprasymas {
+    width: 70%;
+    font-size: 0.8rem;
+  }
+}
+
+.prekes_info .prekes_info_aprasymas .prekes_info_aprasymas_tekstas {
+  border-bottom: 1px solid #bebebe;
+}
+
+@media (max-width: 576px) {
+  .prekes_info .prekes_info_aprasymas .prekes_info_aprasymas_tekstas h3 {
+    font-size: 20px;
+  }
+}
+
+.prekes_info .prekes_info_aprasymas .prekes_info_aprasymas_kaina {
+  border-bottom: 1px solid #bebebe;
+}
+
+.prekes_info .prekes_info_aprasymas .prekes_info_aprasymas_kaina h6 {
+  margin-top: 8px;
+}
+
+.prekes_info .prekes_info_aprasymas .prekes_info_aprasymas_kaina p {
+  font-size: 1.5rem;
+  margin-bottom: 8px;
+}
+
+@media (max-width: 576px) {
+  .prekes_info .prekes_info_aprasymas .prekes_info_aprasymas_kaina p {
+    font-size: 1.1rem;
+  }
+}
+
+.prekes_info .prekes_info_aprasymas .prekes_info_aprasymas_atsiimimas {
+  padding: 15px 0px;
+}
+
+.prekes_info .prekes_info_aprasymas .prekes_info_aprasymas_atsiimimas button {
+  background: #24a105;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 10px;
+  border: none;
+  -webkit-transition: .5s;
+  transition: .5s;
+  margin: 15px 0px;
+  padding: 15px 30px;
+  font-size: 20px;
+}
+
+.prekes_info .prekes_info_aprasymas .prekes_info_aprasymas_atsiimimas button:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  background: #3CB371;
+}
+
+.small_screen {
+  display: none;
+}
+
+.intro {
+  position: relative;
+}
+
+@media (max-width: 576px) {
+  .intro {
+    display: none;
+  }
+}
+
+.intro .container {
+  width: 100%;
+}
+
+.intro .container img {
+  width: 100%;
+}
+
+.intro .container .pasiulymai {
+  z-index: 55;
+  position: absolute;
+  top: 20px;
+  left: 15%;
+  text-align: center;
+}
+
+@media (max-width: 991px) {
+  .intro .container .pasiulymai {
+    left: 15%;
+  }
+}
+
+@media (max-width: 768px) {
+  .intro .container .pasiulymai {
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+}
+
+.intro .container .pasiulymai li {
+  margin-top: 30px;
+  list-style-type: none;
+}
+
+@media (max-width: 991px) {
+  .intro .container .pasiulymai li {
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 576px) {
+  .intro .container .pasiulymai li {
+    margin-top: 6px;
+  }
+}
+
+@media (max-width: 350px) {
+  .intro .container .pasiulymai li {
+    margin-top: 2px;
+  }
+}
+
+.intro .container .pasiulymai li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+  border: 2px solid white;
+  border-radius: 4px;
+  padding: 5px;
+}
+
+@media (max-width: 991px) {
+  .intro .container .pasiulymai li a {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .intro .container .pasiulymai li a {
+    font-size: 0.6rem;
+    padding: 3px;
+  }
+}
+
+@media (max-width: 350px) {
+  .intro .container .pasiulymai li a {
+    font-size: 8px;
+    padding: 2px 4px;
+  }
+}
+
+.apie_mus {
+  min-height: 310px;
+}
+
+.apie_mus h2 {
+  color: #1860a8;
+  border-bottom: 2px solid #1860a8;
+}
+
+.straipsniai_pagrindinis {
+  min-height: 310px;
+}
+
+.straipsniai_pagrindinis h2 {
+  color: #1860a8;
+  border-bottom: 2px solid #1860a8;
+}
+
+.straipsniai_pagrindinis article .antraste {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media (max-width: 576px) {
+  .straipsniai_pagrindinis article .antraste h5 {
+    width: 80%;
+  }
+}
+
+.straipsniai_pagrindinis article .antraste span {
+  font-size: 16px;
+}
+
+@media (max-width: 576px) {
+  .straipsniai_pagrindinis article .antraste span {
+    font-size: 10px;
+    width: 20%;
+  }
+}
+
+.slidinejimo_trasos .container .row .trasos {
+  margin-top: 15px;
+}
+
+.slidinejimo_trasos .container .row .trasos a {
+  text-decoration: none;
+  color: black;
+}
+
+.slidinejimo_trasos .container .row .trasos a img {
+  height: 220px;
+}
+
+@media (max-width: 768px) {
+  .slidinejimo_trasos .container .row .trasos a img {
+    height: auto;
+  }
+}
+
+.slidinejimo_trasos .container .row .trasos a .card-body {
+  border: 1px solid lightgray;
+  border-bottom-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+  border-top: none;
+}
+
+.slidinejimo_trasos .container .row .trasos a .card-body .card-title {
+  border-bottom: 1px solid lightgrey;
+}
+
+.slidinejimo_trasos .container .row .trasos a .card-body .card-text {
+  border-bottom: 1px solid lightgrey;
+}
+
+.slidinejimo_trasos .container .row .trasos a .card-body .adresas {
+  border-bottom: 1px solid lightgrey;
+}
+
+.slidinejimo_trasos .container .row .trasos a .card-body .skaityti_placiau {
+  color: #c40000;
+  margin-bottom: 5px;
+}
+/*# sourceMappingURL=style.css.map */

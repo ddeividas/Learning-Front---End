@@ -1,0 +1,59 @@
+.inventorius{
+    .container{
+        .row{
+            justify-content: space-around;
+            margin-bottom: 20px;
+            .slides, .snieglente1, .snieglente2, .priedai, .vyriski_rubai, .moteriski_rubai{
+                display: block;
+                width: 250px;
+                margin: 15px 10px;
+                border: 1px solid rgb(190,190,190);
+                border-radius: 2px;
+                transition: .5s;
+                &:hover{
+                    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+                    transform: scale(1.05);
+                    text-decoration: none;
+                }
+                a{
+                    text-decoration: none;
+                    color: black;
+                    font-size: 0.8rem;
+                }
+                .paveiksliukas{
+                    img{
+                        width: 100%;
+                    }
+                }
+                .tekstas{
+                    border-top: 1px solid rgb(190,190,190);
+                    padding-top: 10px;
+                    .pavadinimas{
+                        text-align: center;
+                    }
+                    .pirkti{
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        padding: 0px 20px;
+                        margin: 10px 0px;
+                        .daugiau{
+                            button{
+                                background: #24a105;
+                                color: $white;
+                                padding: 5px 10px;
+                                border-radius: 10px;
+                                border: none;
+                                transition: .5s;
+                                &:hover{
+                                    transform: scale(1.05);
+                                    background: #3CB371;
+                                }
+                            }
+                        }
+                    }
+                }                 
+            }
+        }
+    }
+}

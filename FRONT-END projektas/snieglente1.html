@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="assets/libs/fontawesome-free-5.11.2-web/css/all.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700&display=swap&subset=latin-ext"
+        rel="stylesheet">
+    <link rel="stylesheet" href="assets/libs/boostrap/css/bootstrap.css">
+    <link rel="stylesheet" href="assets\min.css\css\style.min.css">
+    <title>SLIDĖS</title>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="header_top">
+                <div class="logo">
+                    <a href="index.html"><img src="assets/img/logo.png" alt=""></a>
+                </div>
+                <div class="right_bar">
+                    <ul>
+                        <li>
+                            <a href="#">Prisijungti</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="header_bottom">
+                <ul>
+                    <li>
+                        <a href="apieMus.html">Apie mus</a>
+                    </li>
+                    <li>
+                        <a href="inventorius.html">Inventorius</a>
+                    </li>
+                    <li>
+                        <a href="trasos.html">Trasos</a>
+                    </li>
+                    <li>
+                        <a href="#">Forumas</a>
+                    </li>
+                    <li>
+                        <a href="straipsniai.html">Straipsniai</a>
+                    </li>
+                    <li id="burger">
+                        <div onclick="burger()" class="menu_bar">
+                            <a href="#">
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                            </a>
+
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <main class="slides">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2 col-md-12 col-12 katalogas">
+                    <div class="large_screen">
+                        <h5>Prekių filtras</h5>
+                        <div class="kategorija">
+                            <h6>Kategorija</h6>
+                            <p onclick="visos_prekes_button()">Visos prekės</p>
+                            <p onclick="snieglentes_button()">Snieglentės</p>
+                            <p onclick="slides_button()">Slidės</p>
+                            <p onclick="paciuzos()">Pačiūžos</p>
+                            <p onclick="vyriski_drabuziai()">Vyriški drabužiai</p>
+                            <p onclick="moteriski_drabuziai()">Moteriški drabužiai</p>
+                            <p onclick="priedai_button()">Priedai</p>
+                        </div>
+                        <div class="kaina">
+                            <h6>Kaina</h6>
+                            <input type="checkbox" name="price1" value="price">0 - 50 €<br>
+                            <input type="checkbox" name="price1" value="price">50 - 100 €<br>
+                            <input type="checkbox" name="price1" value="price">100 - 200 €<br>
+                            <input type="checkbox" name="price1" value="price">200 - 300 €<br>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-10 col-md-12 col-12 prekes_info">
+                    <div class="prekes_info_paveiksliukas col-lg-5 col-md-5 col-10">
+                        <img src="assets/img/snowboard1.jpg" alt="">
+                    </div>
+                    <div class="prekes_info_aprasymas col-lg-7 col-md-7 col-10">
+                        <div class="prekes_info_aprasymas_tekstas">
+                            <h3>Snieglentė NR:1546</h3>
+                            <p><b>Model</b> 201475</p>
+                            <p><b>Prekės būkle</b> Nauja</p>
+                            <p>Snieglentė Pathron Legend Allmauntain/Freestyle tipo. <br>
+                                <b>Profilis:</b> „Hybrid Camber“ <br>
+                                <b>Forma:</b> Twin <br>
+                                <b>Laminavimas:</b> Triax <br>
+                                <b></b> Sintered <br>
+                                <b>Reinforcemenet:</b> Tasmanijos ąžuolas <br>
+                                <b>Flex:</b> Medium <br>
+                                <b>Finish:</b> blizgus <br>
+                                <b>Lygis:</b> Tarpinis / Pažengęs. <br>
+                            </p>
+                        </div>
+                        <div class="prekes_info_aprasymas_kaina">
+                            <h6>Kaina:</h6>
+                            <p>120 Eur</p>
+                        </div>
+                        <div class="prekes_info_aprasymas_atsiimimas">
+                            <span>Pristatysime į namus: 1 - 5 d.d., 3,99 €</span> <br>
+                            <span>Atsiimkite Omniva paštomate: 1 - 5 d.d., 2,00 €</span> <br>
+                            <span>Atsiimkite LP Express terminale: 1 - 5 d.d., 2,00 €</span> <br>
+                            <span>Atsiimkite DPD Pickup siuntų taške: 1 - 5 d.d., 2,00 €</span> <br>
+                            <button>Užsakyti</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="nuorodos col-lg-4 col-md-6 col-12">
+                    <h5>Nuorodos</h5>
+                    <i class="fab fa-instagram"></i>
+                    <a href="https://www.instagram.com">Instagram</a>
+                    <br>
+                    <i class="fab fa-facebook-square"></i>
+                    <a href="https://www.facebook.com">Facebook</a>
+                    <br>
+                    <i class="fas fa-cloud"></i>
+                    <a href="https://www.orai24.lt/">Orai</a>
+                    <br>
+                    <i class="fas fa-home"></i>
+                    <a
+                        href="https://www.booking.com/index.lt.html?aid=376449&label=bdot-46v6pHA524Ihp3Pi103shwS267777991096%3Apl%3Ata%3Ap1%3Ap22%2C558%2C000%3Aac%3Aap1t1%3Aneg%3Afi%3Atikwd-319605258151%3Alp9062292%3Ali%3Adec%3Adm&sid=7b0f116f7ffa2d3e5556765f7d0a8045&lang=lt&sb_price_type=total&soz=1&lang_click=top;cdl=lv;lang_changed=1">Booking</a>
+                    <br>
+                </div>
+
+                <div class="footer_menu col-lg-4 col-md-6 col-12">
+                    <h5>Menu</h5>
+                    <a href="apieMus.html">Apie mus</a>
+                    <br>
+                    <a href="inventorius.html">Inventorius</a>
+                    <br>
+                    <a href="trasos.html">Trasos</a>
+                    <br>
+                    <a href="#">Forumas</a>
+                    <br>
+                    <a href="straipsniai.html">Straipsniai</a>
+                </div>
+
+                <div class="partneriai col-lg-4 col-md-6 col-12">
+                    <h5>Partneriai</h5>
+                    <a href="#">„​Snow Arena“, Druskininkai</a>
+                    <br>
+                    <a href="#">Liepkalnis, Vilnius</a>
+                    <br>
+                    <a href="#">Kalitos kalnas, Anykščiai</a>
+                    <br>
+                    <a href="#">Lietuvos žiemos sporto centras, Ignalina</a>
+                    <br>
+                    <a href="#">Aukštagirės slidinėjimo trasa, Šilalės rajonas</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- -------------------------------LEFT MENU BARAS! -->
+
+    <div class="left_menu_bar">
+        <ul>
+            <h5>MENU</h5>
+            <li>
+                <a href="apieMus.html">Apie mus</a>
+            </li>
+            <li>
+                <a href="inventorius.html">Inventorius</a>
+            </li>
+            <li>
+                <a href="trasos.html">Trasos</a>
+            </li>
+            <li>
+                <a href="#">Forumas</a>
+            </li>
+            <li>
+                <a href="straipsniai.html">Straipsniai</a>
+            </li>
+        </ul>
+    </div>
+
+    <!-- -------------------------------LEFT MENU BARAS END! -->
+
+    <!-- ------------------------------------ SMAL_SCREEN START -->
+
+    <div class="small_screen">
+        <div onclick="small_screen()" class="headeris">
+            <h5>Prekių filtras</h5>
+        </div>
+        <div class="isskleidziamas_katalogas">
+            <div class="kategorija">
+                <h6>Kategorija</h6>
+                <p onclick="visos_prekes_button()">Visos prekės</p>
+                <p onclick="snieglentes_button()">Snieglentės</p>
+                <p onclick="slides_button()">Slidės</p>
+                <p onclick="paciuzos()">Pačiūžos</p>
+                <p onclick="vyriski_drabuziai()">Vyriški drabužiai</p>
+                <p onclick="moteriski_drabuziai()">Moteriški drabužiai</p>
+                <p onclick="priedai_button()">Priedai</p>
+            </div>
+            <div class="kaina">
+                <h6>Kaina</h6>
+                <input type="checkbox" name="price1" value="price">0 - 50 €<br>
+                <input type="checkbox" name="price1" value="price">50 - 100 €<br>
+                <input type="checkbox" name="price1" value="price">100 - 200 €<br>
+                <input type="checkbox" name="price1" value="price">200 - 300 €<br>
+            </div>
+        </div>
+    </div>
+
+    <!-- ------------------------------------ SMAL_SCREEN ENDS -->
+
+
+    <script src="inventorius.js"></script>
+
+</body>
+
+</html>

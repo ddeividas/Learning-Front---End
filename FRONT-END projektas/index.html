@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="assets/libs/fontawesome-free-5.11.2-web/css/all.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700&display=swap&subset=latin-ext"
+        rel="stylesheet">
+    <link rel="stylesheet" href="assets/libs/boostrap/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/libs/lightgallery.js-master/src/css/lightgallery.css">
+    <link rel="stylesheet" type="text/css" href="assets/libs/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="assets/libs/slick/slick-theme.css" />
+    <link rel="stylesheet" href="assets/libs/animate.css-master/animate.min.css">
+    <link rel="stylesheet" href="assets\min.css\css\style.min.css">
+    <title>PRAMOGŲ ZONA</title>
+</head>
+
+<body>
+    <header id="virsus">
+        <div class="container">
+            <div class="header_top">
+                <div class="logo">
+                    <a href="#"><img src="assets/img/logo.png" alt=""></a>
+                </div>
+                <div class="right_bar">
+                    <ul>
+                        <li>
+                            <button type="button" class="btn btn-primary prisijungimo_mygtukas" data-toggle="modal" data-target="#exampleModal">
+                                Prisijungti
+                              </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="header_bottom">
+                <ul>
+                    <li>
+                        <a href="apieMus.html">Apie mus</a>
+                    </li>
+                    <li>
+                        <a href="inventorius.html">Inventorius</a>
+                    </li>
+                    <li>
+                        <a href="trasos.html">Trasos</a>
+                    </li>
+                    <li>
+                        <a href="#">Forumas</a>
+                    </li>
+                    <li>
+                        <a href="straipsniai.html">Straipsniai</a>
+                    </li>
+                    <li id="burger">
+                        <div onclick="burger()" class="menu_bar">
+                            <a href="#">
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                            </a>
+
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="cover">
+            <div class="register">
+                <div>
+                    <h4>Registracija</h4>
+                    <p>Jau prisiregistravęs? <a data-toggle="modal" data-target="#exampleModal" href="#">Prisijunk</a></p>
+                </div>
+                <form action="">
+                    <input id="vardas" type="text" placeholder="Vardas" value=''>
+                    <input id="pavarde" type="text" placeholder="Pavardė" value="">
+                    <input id="el_pastas" type="text" placeholder="El-paštas" value="">
+                    <input id="password" type="password" placeholder="Slaptažodis" value="">
+                    <input id="repeat_password" type="password" placeholder="Pakartoti slaptažodį" value="">
+                    <div class="tekstas_po_input"></div>
+                </form>
+                <div class="button">
+                    <button onclick="registracija()">Registracija</button>
+                </div>
+            </div>
+        </div>
+        <div class="to_top">
+            <a class="toTop" href="#virsus"><i class="fas fa-arrow-circle-up"></i></a>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <h2>Naujienos</h2>
+
+            <article>
+                <h5>Aukštagirė - nauja slidinėjimo trasa Lietuvoje</h5>
+                <div class="row straipsniai">
+                    <div class="image col-lg-4 col-md-6 col-12">
+                        <img src="assets\img\aukstagire.jpg" alt="">
+                    </div>
+                    <p class="col-lg-8 col-md-6 col-12">
+                        Porą metų vykusias kalbas Šilalės rajone dėl naujosios slidinėjimo trasos šiais metais pabaigė
+                        jos
+                        atidarymas. Aukštagirė - taip vadinasi naujasis slidinėjimo centras. Trasos yra Aukštagirės
+                        kaime
+                        (30 km už Kryžkalnio).
+                        Praėjusį savaitgalį atsidaręs slidinėjimo centras turi tris trasas: dvi mėlynas ir raudoną.
+                        Mėlynosios trasos ilgis yra apie 300 metrų. Taip pat yra nedidelė trasa su keltuvu
+                        pradedantiesiems.
+                        Šį rudenį trasose buvo įrengti du lyniniai keltuvai: vienas skirtas varlynui, o kitas snow
+                        parkui.
+                        Ir dar yra du bugeliniai keltuvai raudonai ir mėlynai trasoms bei apšvietimo sistema
+                        vakariniam
+                        slidinėjimui. Nupirktas ratrakas trasoms lyginti ir dvi sniego patrankos.
+                        Trijų valandų slidinėjimo kaina darbo dieną yra 8 eurai, savaitgalį - 11. Veikia nuomos
+                        punktas.
+                        Trasa buvo įrengta dalinai iš privačių lėšų.</span>
+                    </p>
+                </div>
+            </article>
+
+            <article>
+                <h5>Kauniečiams slidinėjimo trasos teks palaukti</h5>
+                <div class="row straipsniai">
+                    <div class="image col-lg-4 col-md-6 col-12">
+                        <img src="assets\img\kaunas.jpg" alt="">
+                    </div>
+                    <p class="col-lg-8 col-md-6 col-12">
+                        Šiam sezonui slidinėjimo trasą Kaune žadėję įrengti savivaldybės vadovai sako, kad procesas
+                        užtruko,
+                        tačiau susitarus dėl vietos, projektavimo darbai galėtų prasidėti kitais metais.
+                        „Geriausiu atveju mes plotume rankomis, jeigu per žiemą pavyktų sutvarkyti procedūras ir kitais
+                        metais per vasarą kažką tikrai nuveikti“, – BNS sakė Kauno miesto savivaldybės administracijos
+                        direktorius Gintaras Petrauskas.
+                        Pasak jo, su Kauno rajono savivaldybe sutarta, kad trasa būtų įrengiama Kleboniškio miške, ant
+                        Smertės kalnu vadinamo šlaito Narėpų kaime. Laukiama, kol savivaldybė baigs tvarkyti reikiamus
+                        dokumentus.
+                        „Jiems reikia keisti savo detalųjį planą, keisti savo specialųjį planą – kaip ir vykdant bet
+                        kokias
+                        statybas. Be to, atsiranda išmiškinimo procedūra, kuri galima tik pakeitus specialųjį planą.
+                        (...)
+                        Tada, pritarus Vyriausybei, galėtų prasidėti realūs projektavimo darbai“, – kalbėjo G.
+                        Petrauskas... <button type="button" class="btn btn-link read_more" data-toggle="modal" data-target="#skaityti">
+                            Read more
+                          </button>
+                        <!-- Pasak jo, klausimas dėl išmiškinimo darbų rudenį buvo aptartas su Valstybine miškų tarnyba ir ji
+                        prieštaravimų neturėjo.
+                        Iš pradžių Kauno miesto ir rajono savivaldybių atstovai svarstė dvi galimas vietas, kuriose
+                        slidinėjimo trasos galėtų būti įrengiamos: Kleboniškio mišką ir Kačerginę. Pastarojo varianto
+                        atsisakyta įvertinus tai, kad ten pavyktų įgyvendinti tik gerokai mažesnį projektą, todėl jis
+                        neatsipirktų.
+                        „Mes nusivežėme specialistus ir į vieną vietą, ir į kitą. Jeigu tu negali padaryti kokybiškai
+                        bent
+                        taip, kaip turi Vilnius, tada geriau iš viso neužsiimti, nes investicijos, žmogiškieji resursai
+                        laiko ir pinigų atžvilgiu tikrai nebus labai maži. Jeigu nepavyksta padaryti bent 7–9 trasų,
+                        tada
+                        žmonės lieka nepatenkinti“, – kalbėjo G. Petrauskas.
+                        Pasak jo, ieškant, kur Kauno apylinkėse įrengti tokią trasą, buvo konsultuojamasi su Vilniaus
+                        Liepkalnio slidinėjimo trasos operatoriais.
+                        Kleboniškyje galėtų atsirasti iki dešimt nusileidimo trasų. Sutarus dėl vietos, toliau būtų
+                        ieškoma
+                        būdų organizuoti privažiavimą ir automobilių statymą. Metų pradžioje pristačius šią idėją, buvo
+                        skelbta, kad ją įgyvendinti tikimasi iki šios žiemos, vėliau planuota, kad trasa veikti pradės
+                        per
+                        kelerius metus. -->
+                    </p>
+                </div>
+            </article>
+
+            <article>
+                <h5>Pradeda veikti "Lynų kelias" į Snow areną</h5>
+                <div class="row straipsniai">
+                    <div class="image col-lg-4 col-md-6 col-12">
+                        <img src="assets\img\lynukelias.jpg" alt="">
+                    </div>
+                    <p class="col-lg-8 col-md-6 col-12">
+                        Šiandien Druskininkuose pradeda veikti „Lynų kelias“, sujungsiantis du lankomiausius miesto
+                        objektus
+                        – Druskininkų vandens parką ir slidinėjimo kompleksą Snow areną.
+                        Vienintelis Baltijos šalyse „Lynų kelias“ įrengtas per metus. Šio objekto atidarymo data buvo
+                        atidėta du kartus.
+                        „Lynų kelio“, kuris kerta Nemuną, ilgis – 1 km 165 m."Lynų kelią" sudaro keturios uždaros
+                        skaidraus
+                        stiklo kabinos – gondolos, kuriose telpa po 10 žmonių. Gondolos pakils į 45 metrų aukštį. Jos
+                        yra
+                        pagamintos iš skaidraus stiklo, todėl bus tarsi judanti apžvalgos aikštelė, kuri leis pamatyti
+                        Druskininkų panoramą. Kelionė „Lynų keliu“ truks apie keturias minutes.
+                        Planuojama, kad per valandą bus galima perkelti daugiau nei 200 žmonių.
+                        <button type="button" class="btn btn-link read_more" data-toggle="modal" data-target="#skaityti_antras">
+                            Read more
+                          </button>
+                        <!-- Pasikėlimas į vieną pusę
+                        kainuos tris eurus, o perkant bilietą pirmyn ir atgal – penkis eurus. Vaikams iki penkerių metų
+                        nereikės mokėti. Projekto vertė beveik 3,9 mln. eurų. -->
+
+                    </p>
+                </div>
+            </article>
+            <div class="all">
+                <a href="straipsniai.html">Skaityti visus straipsnius</a>
+            </div>
+        </div>
+    </main>
+    <main class="inventorius">
+        <div class="container">
+            <h2>Populiariausios prekės</h2>
+            <div class="row">
+                <div class="item slides col-lg-3 col-md-5 col-10">
+                    <a href="slides.html">
+                        <div class="paveiksliukas">
+                            <img src="assets/img/skis.jpg" alt="">
+                        </div>
+                        <div class="tekstas">
+                            <div class="pavadinimas">
+                                Slidės NR.196
+                            </div>
+                            <div class="pirkti">
+                                <div class="kaina">
+                                    <b>Kaina:</b> <span>190 Eur</span>
+                                </div>
+                                <div class="daugiau">
+                                    <button>Užsakyti</button>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="item snieglente1 col-lg-3 col-md-5 col-10">
+                    <a href="snieglente1.html">
+                        <div class="paveiksliukas">
+                            <img src="assets/img/snowboard1.jpg" alt="">
+                        </div>
+                        <div class="tekstas">
+                            <div class="pavadinimas">
+                                Snieglentė NR.1546
+                            </div>
+                            <div class="pirkti">
+                                <div class="kaina">
+                                    <b>Kaina:</b> <span>120 Eur</span>
+                                </div>
+                                <div class="daugiau">
+                                    <button>Užsakyti</button>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="item snieglente2 col-lg-3 col-md-5 col-10">
+                    <a href="snieglente2.html">
+                        <div class="paveiksliukas">
+                            <img src="assets/img/snowboard2.jpg" alt="">
+                        </div>
+                        <div class="tekstas">
+                            <div class="pavadinimas">
+                                Snieglentė NR.924
+                            </div>
+                            <div class="pirkti">
+                                <div class="kaina">
+                                    <b>Kaina:</b> <span>149 Eur</span>
+                                </div>
+                                <div class="daugiau">
+                                    <button>Užsakyti</button>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="item priedai col-lg-3 col-md-5 col-10">
+                    <a href="helmet.html">
+                        <div class="paveiksliukas">
+                            <img src="assets/img/helmet.jpg" alt="">
+                        </div>
+                        <div class="tekstas">
+                            <div class="pavadinimas">
+                                Vyriškas šalmas NR.1546
+                            </div>
+                            <div class="pirkti">
+                                <div class="kaina">
+                                    <b>Kaina:</b> <span>90 Eur</span>
+                                </div>
+                                <div class="daugiau">
+                                    <button>Užsakyti</button>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="item vyriski_rubai col-lg-3 col-md-5 col-10">
+                    <a href="man_clothes.html">
+                        <div class="paveiksliukas">
+                            <img src="assets/img/man_clothes.jpg" alt="">
+                        </div>
+                        <div class="tekstas">
+                            <div class="pavadinimas">
+                                Vyr. kombinizonas NR.546
+                            </div>
+                            <div class="pirkti">
+                                <div class="kaina">
+                                    <b>Kaina:</b> <span>240 Eur</span>
+                                </div>
+                                <div class="daugiau">
+                                    <button>Užsakyti</button>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="item moteriski_rubai col-lg-3 col-md-5 col-10">
+                    <a href="woman_clothes.html">
+                        <div class="paveiksliukas">
+                            <img src="assets/img/woman_clothes.jpg" alt="">
+                        </div>
+                        <div class="tekstas">
+                            <div class="pavadinimas">
+                                Mot. kombinizonas NR.584
+                            </div>
+                            <div class="pirkti">
+                                <div class="kaina">
+                                    <b>Kaina:</b> <span>220 Eur</span>
+                                </div>
+                                <div class="daugiau">
+                                    <button>Užsakyti</button>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="all">
+                <a href="inventorius.html">Žiūrėti visą inventorių</a>
+            </div>
+        </div>
+    </main>
+
+    <main class="vietos">
+        <div class="container">
+            <h2>Populiariausios slidinėjimo trasos Lietuvoje</h2>
+            <div class="vietos_slide">
+                <div>
+                    <div class="card" style="width: 18rem;">
+                        <img src="assets/img/anyksciai_vieta.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Laisvalaikio ir pramogų centras „Kalita“</h5>
+                            <p class="card-text">
+                                Centre veikia 4 įvairaus sudėtingumo trasos, kurių ilgis - nuo 200 iki 400 metrų. Į
+                                kalną kyla 5 keltuvai.
+                            </p>
+                            <p>Anykščiai, Kalno g. 25</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="card" style="width: 18rem;">
+                        <img src="assets/img/ignalina.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Lietuvos žiemos sporto centras</h5>
+                            <p class="card-text">
+                                Čia veikia 4 kalnų slidinėjimo trasos su 4 pakėlėjais ir 2 sniego
+                                gaminimo sistemomis. Centre taip pat pat paruošta lygumų slidinėjimo trasa.
+                            </p>
+                            <p>Ignalina, Sporto g. 3</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="card" style="width: 18rem;">
+                        <img src="assets/img/liepkalnis.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Liepkalnio žiemos slidinėjimo trasos</h5>
+                            <p class="card-text">
+                                Liepkalnyje galima rasti net 10 veikiančių slidinėjimo trasų. Liepkalnyje šiemet galima
+                                rasti apie 20 įvairaus sudėtingumo figūrų.
+                                <p>Vilnius, Minsko pl. 2</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="card" style="width: 18rem;">
+                        <img src="assets/img/birztonas.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Birštono slidinėjimo centras</h5>
+                            <p class="card-text">
+                                Šiame centre galima paslidinėti dvejopo sudėtingumo (160 ir 300 metrų) ilgumo trasose.
+                                Viršukalnė siekia 40 metrų, į kurią galima pakilti keltuvu.
+                            </p>
+                            <p>Birštonas, N. Silvanavičiaus g.</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="card" style="width: 18rem;">
+                        <img src="assets/img/druskininkai.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Žiemos kompleksas „Snow Arena</h5>
+                            <p class="card-text">
+                                Tai vienintelis žiemos pramogų parkas Baltijos šalyse, kuriame slidinėti galima ne tik
+                                žiemos metu, bet ir visus metus.
+                            </p>
+                            <p>Druskininkai, Nemuno kelias 2</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="all">
+                <a href="trasos.html">Žiūrėti visas trasas</a>
+            </div>
+        </div>
+    </main>
+    <main class="video">
+        <div class="container">
+            <h2>Dienos vaizdai</h2>
+            <div class="dienos_vaizdai" id="photo_gallery">
+                <a href="assets/img/day_photos/photo.jpg">
+                    <img src="assets/img/day_photos/photo.jpg" alt="">
+                </a>
+                <a href="assets/img/day_photos/photo2.jpg">
+                    <img src="assets/img/day_photos/photo2.jpg" alt="">
+                </a>
+                <a href="assets/img/day_photos/photo4.jpg">
+                    <img src="assets/img/day_photos/photo4.jpg" alt="">
+                </a>
+                <a href="assets/img/day_photos/photo3.jpg">
+                    <img src="assets/img/day_photos/photo3.jpg" alt="">
+                </a>
+                <a href="assets/img/day_photos/photo5.jpg">
+                    <img src="assets/img/day_photos/photo5.jpg" alt="">
+                </a>
+                <a href="assets/img/day_photos/photo6.jpg">
+                    <img src="assets/img/day_photos/photo6.jpg" alt="">
+                </a>
+            </div>
+        </div>
+    </main>
+    <main class="intro wow fadeInLeftBig">
+        <div class="container">
+            <img src="assets/img/intro.jpeg" alt="">
+            <div class="pasiulymai">
+                <ul>
+                    <li class="wow fadeInRightBig" data-wow-delay="1s"><a href="#">Geriausi slidinėjimų pasiūlymai</a></li>
+                    <li class="wow fadeInRightBig" data-wow-delay="2s"><a href="#">Geriausi kurortų pasiūlymai</a></li>
+                    <li class="wow fadeInRightBig" data-wow-delay="3s"><a href="#">Geriausi prekių pasiūlymai</a></li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="nuorodos col-lg-4 col-md-6 col-12">
+                    <h5>Nuorodos</h5>
+                    <i class="fab fa-instagram"></i>
+                    <a href="https://www.instagram.com">Instagram</a>
+                    <br>
+                    <i class="fab fa-facebook-square"></i>
+                    <a href="https://www.facebook.com">Facebook</a>
+                    <br>
+                    <i class="fas fa-cloud"></i>
+                    <a href="https://www.orai24.lt/">Orai</a>
+                    <br>
+                    <i class="fas fa-home"></i>
+                    <a
+                        href="https://www.booking.com/index.lt.html?aid=376449&label=bdot-46v6pHA524Ihp3Pi103shwS267777991096%3Apl%3Ata%3Ap1%3Ap22%2C558%2C000%3Aac%3Aap1t1%3Aneg%3Afi%3Atikwd-319605258151%3Alp9062292%3Ali%3Adec%3Adm&sid=7b0f116f7ffa2d3e5556765f7d0a8045&lang=lt&sb_price_type=total&soz=1&lang_click=top;cdl=lv;lang_changed=1">Booking</a>
+                    <br>
+                </div>
+
+                <div class="footer_menu col-lg-4 col-md-6 col-12">
+                    <h5>Menu</h5>
+                    <a href="apieMus.html">Apie mus</a>
+                    <br>
+                    <a href="inventorius.html">Inventorius</a>
+                    <br>
+                    <a href="trasos.html">Trasos</a>
+                    <br>
+                    <a href="#">Forumas</a>
+                    <br>
+                    <a href="straipsniai.html">Straipsniai</a>
+                </div>
+
+                <div class="partneriai col-lg-4 col-md-6 col-12">
+                    <h5>Partneriai</h5>
+                    <a href="#">„​Snow Arena“, Druskininkai</a>
+                    <br>
+                    <a href="#">Liepkalnis, Vilnius</a>
+                    <br>
+                    <a href="#">Kalitos kalnas, Anykščiai</a>
+                    <br>
+                    <a href="#">Lietuvos žiemos sporto centras, Ignalina</a>
+                    <br>
+                    <a href="#">Aukštagirės slidinėjimo trasa, Šilalės rajonas</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ==================================PAGRINDINIO TEKSTO PABAIGA -->
+
+    <!-- -------------------------------ATSIDARANTIS LANGAS! -->
+    <div class="modal fade" id="skaityti" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLongTitle">Kauniečiams slidinėjimo trasos teks palaukti</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                Šiam sezonui slidinėjimo trasą Kaune žadėję įrengti savivaldybės vadovai sako, kad procesas
+                užtruko,
+                tačiau susitarus dėl vietos, projektavimo darbai galėtų prasidėti kitais metais.
+                „Geriausiu atveju mes plotume rankomis, jeigu per žiemą pavyktų sutvarkyti procedūras ir kitais
+                metais per vasarą kažką tikrai nuveikti“, – BNS sakė Kauno miesto savivaldybės administracijos
+                direktorius Gintaras Petrauskas.
+                Pasak jo, su Kauno rajono savivaldybe sutarta, kad trasa būtų įrengiama Kleboniškio miške, ant
+                Smertės kalnu vadinamo šlaito Narėpų kaime. Laukiama, kol savivaldybė baigs tvarkyti reikiamus
+                dokumentus.
+                „Jiems reikia keisti savo detalųjį planą, keisti savo specialųjį planą – kaip ir vykdant bet
+                kokias
+                statybas. Be to, atsiranda išmiškinimo procedūra, kuri galima tik pakeitus specialųjį planą.
+                (...)
+                Tada, pritarus Vyriausybei, galėtų prasidėti realūs projektavimo darbai“, – kalbėjo G.
+                Petrauskas.
+                Pasak jo, klausimas dėl išmiškinimo darbų rudenį buvo aptartas su Valstybine miškų tarnyba ir ji
+                prieštaravimų neturėjo.
+                Iš pradžių Kauno miesto ir rajono savivaldybių atstovai svarstė dvi galimas vietas, kuriose
+                slidinėjimo trasos galėtų būti įrengiamos: Kleboniškio mišką ir Kačerginę. Pastarojo varianto
+                atsisakyta įvertinus tai, kad ten pavyktų įgyvendinti tik gerokai mažesnį projektą, todėl jis
+                neatsipirktų.
+                „Mes nusivežėme specialistus ir į vieną vietą, ir į kitą. Jeigu tu negali padaryti kokybiškai
+                bent
+                taip, kaip turi Vilnius, tada geriau iš viso neužsiimti, nes investicijos, žmogiškieji resursai
+                laiko ir pinigų atžvilgiu tikrai nebus labai maži. Jeigu nepavyksta padaryti bent 7–9 trasų,
+                tada
+                žmonės lieka nepatenkinti“, – kalbėjo G. Petrauskas.
+                Pasak jo, ieškant, kur Kauno apylinkėse įrengti tokią trasą, buvo konsultuojamasi su Vilniaus
+                Liepkalnio slidinėjimo trasos operatoriais.
+                Kleboniškyje galėtų atsirasti iki dešimt nusileidimo trasų. Sutarus dėl vietos, toliau būtų
+                ieškoma
+                būdų organizuoti privažiavimą ir automobilių statymą. Metų pradžioje pristačius šią idėją, buvo
+                skelbta, kad ją įgyvendinti tikimasi iki šios žiemos, vėliau planuota, kad trasa veikti pradės
+                per
+                kelerius metus.
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <!-- -------------------------------ATSIDARANTIS LANGAS END! -->
+
+    <!-- -------------------------------ATSIDARANTIS LANGAS! -->
+
+    <div class="modal fade" id="skaityti_antras" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLongTitle">Pradeda veikti "Lynų kelias" į Snow areną</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                Šiandien Druskininkuose pradeda veikti „Lynų kelias“, sujungsiantis du lankomiausius miesto
+            objektus
+            – Druskininkų vandens parką ir slidinėjimo kompleksą Snow areną.
+            Vienintelis Baltijos šalyse „Lynų kelias“ įrengtas per metus. Šio objekto atidarymo data buvo
+            atidėta du kartus.
+            „Lynų kelio“, kuris kerta Nemuną, ilgis – 1 km 165 m."Lynų kelią" sudaro keturios uždaros
+            skaidraus
+            stiklo kabinos – gondolos, kuriose telpa po 10 žmonių. Gondolos pakils į 45 metrų aukštį. Jos
+            yra
+            pagamintos iš skaidraus stiklo, todėl bus tarsi judanti apžvalgos aikštelė, kuri leis pamatyti
+            Druskininkų panoramą. Kelionė „Lynų keliu“ truks apie keturias minutes.
+            Planuojama, kad per valandą bus galima perkelti daugiau nei 200 žmonių.
+            Pasikėlimas į vieną pusę
+            kainuos tris eurus, o perkant bilietą pirmyn ir atgal – penkis eurus. Vaikams iki penkerių metų
+            nereikės mokėti. Projekto vertė beveik 3,9 mln. eurų.
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <!-- -------------------------------ATSIDARANTIS LANGAS END! -->
+
+    <!-- -------------------------------LEFT MENU BARAS! -->
+
+    <div class="left_menu_bar">
+        <ul>
+            <h5>MENU</h5>
+            <li>
+                <a href="apieMus.html">Apie mus</a>
+            </li>
+            <li>
+                <a href="inventorius.html">Inventorius</a>
+            </li>
+            <li>
+                <a href="trasos.html">Trasos</a>
+            </li>
+            <li>
+                <a href="#">Forumas</a>
+            </li>
+            <li>
+                <a href="straipsniai.html">Straipsniai</a>
+            </li>
+        </ul>
+    </div>
+
+    <!-- -------------------------------LEFT MENU BARAS END! -->
+
+
+    <!-- -----------------------------------PRISIJUNGTI MODALAS START-->
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Prisijungti</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-group">
+                      <label for="exampleInputEmail1">El-paštas</label>
+                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    </div>
+                    <div class="form-group">
+                      <label for="exampleInputPassword1">Slaptažodis</label>
+                      <input type="password" class="form-control" id="exampleInputPassword1">
+                    </div>
+                    <div class="tekstas_po_input_prisijungimo"></div>
+                  </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Atšaukti</button>
+              <button onclick="prisijungimas()" type="button" class="btn btn-primary prisijungimo_mygtukas">Prisijungti</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <!-- ----------------------------------------PRISIJUNGTI MODALAS END -->
+    <script src="jquery.js"></script>
+    <script src="assets\libs\boostrap\js\bootstrap.js"></script>
+    <script src="assets/libs/slick/slick.js"></script>
+    <script src="assets/libs/lightgallery.js-master/demo/js/lightgallery.min.js"></script>
+    <script src="assets/libs/lightgallery.js-master/demo/js/lg-thumbnail.min.js"></script>
+    <script src="assets/libs/lightgallery.js-master/demo/js/lg-fullscreen.min.js"></script>
+    <script src="assets/libs/WOW-master/dist/wow.min.js"></script>
+    <script src="forma.js"></script>
+    <script src="main.js"></script>
+
+</body>
+
+</html>
