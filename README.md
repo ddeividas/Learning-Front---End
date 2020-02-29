@@ -1,2 +1,2 @@
 # Learning-Front---End
-This is a repository of Front-End lectures works
+This is a repository of Front-End lectures work
